@@ -17,9 +17,21 @@
             <div class="brand-logo">
                 <img src="https://cdn.freelogovectors.net/wp-content/uploads/2023/05/balenciaga-logo-freelogovectors.net_.png" alt="">
             </div>
-            <div class="mein-menu">
 
-            </div>
+            <div class="model-title oswald-medium" id="three_xl_title"><h2>3xl</h2></div>
+            <div class="mein-menu" id="three_xl"></div>
+
+            <div class="model-title oswald-medium" id="track_title"><h2>track</h2></div>
+            <div class="mein-menu" id="track"></div>
+
+            <div class="model-title oswald-medium" id="runner_title"><h2>runner</h2></div>
+            <div class="mein-menu" id="runner"></div>
+
+            <div class="model-title oswald-medium" id="triple_s_title"><h2>triple s</h2></div>
+            <div class="mein-menu" id="triple_s"></div>
+
+            <div class="model-title oswald-medium" id="others_title"><h2>others</h2></div>
+            <div class="mein-menu" id="others"></div>
         </section>
 
     </main>
@@ -27,5 +39,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="card.js"></script>
     <script src="./../script.js"></script>
+    <script>  window.addEventListener('load', () => {
+        const hash = window.location.hash;
+        if (hash) {
+          const target = document.querySelector(hash);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });</script>
 </body>
 </html>

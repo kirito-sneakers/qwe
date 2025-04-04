@@ -10,6 +10,7 @@
 
 body, html {
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 .black {
@@ -626,7 +627,7 @@ body, html {
 }
 
 header {
-    position: sticky;
+    position: relative;
     background-color: #fff;
     top: 0px;
     display: flex;
@@ -732,6 +733,16 @@ main {
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+        p {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            opacity: 1;
+            font-size: 17px;
+            color: #606060;
+            letter-spacing: 1px;
+        }
         &:hover {
             .swiper  {
                 .swiper-button-next, .swiper-button-prev, .swiper-pagination {
@@ -748,7 +759,11 @@ main {
     .main-list {
         aspect-ratio: 1 / 1.35;
         h3 {
-            bottom: 150px;
+            bottom: 120px;
+        }
+        p {
+            font-size: 15px;
+            bottom: 90px;
         }
     }
     .secondary-list {
@@ -758,8 +773,7 @@ main {
         }
         p {
             font-size: 15px;
-            margin-top: 25px;
-            color: #606060;
+            bottom: 90px;
         }
     }
 }
@@ -770,6 +784,19 @@ main {
     border-bottom: 1px solid #111;
     align-items: center;
     justify-content: center;
+}
+
+.model-title {
+    display: flex;
+    height: 100px;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1px;
+    h2 {
+        text-transform: uppercase;
+    }
 }
 
 .soon {

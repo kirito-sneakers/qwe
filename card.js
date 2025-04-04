@@ -8,35 +8,44 @@ const balenciagaMainMenu = [
             "https://balenciaga.dam.kering.com/m/102c767026467f20/Large-814419W3XUA1090_F.jpg?v=1",
             "https://balenciaga.dam.kering.com/m/10e6ed040d681a1d/Large-734731W2RG39010_F.jpg?v=2"
         ],
-        href: "https://google.com",
-    },
-    {
-        title: 'balenciaga runner',
-        images: [
-            "https://balenciaga.dam.kering.com/m/584174b2c523b16a/Large-772774W3RBT1000_F.jpg?v=6",
-            "https://balenciaga.dam.kering.com/m/4b34eb8a4d5105cd/Large-772774WRUNG9010_F.jpg?v=1",
-            "https://balenciaga.dam.kering.com/m/379f355b761781fb/Large-813793WRUCU1000_F.jpg?v=1"
-        ],
-        href: "https://google.com",
+        href: "./balenciaga/balenciaga.html#three_xl_title",
+        models: 5,
     },
     {
         title: 'balenciaga track',
         images: [
             "https://balenciaga.dam.kering.com/m/614246a71e653806/Large-542436W1GB11000_F.jpg?v=5",
-            "https://balenciaga.dam.kering.com/m/6e1055a4e22cfd55/Large-542436WTRHW9010_F.jpg?v=1",
-            "https://balenciaga.dam.kering.com/m/7b7c9495c7df7055/Large-542436W3AC48071_F.jpg?v=3",
-            "https://balenciaga.dam.kering.com/m/61e97b5971411bf7/Large-690494W3GN11000_F.jpg?v=3"
-
+            "https://balenciaga.dam.kering.com/m/4b9e3467ee30cdb0/Large-542023WTRHW1090_F.jpg?v=2",
+            "./balenciaga/img/track-led-black-1.jpg",
+            "https://balenciaga.dam.kering.com/m/61e97b5971411bf7/Large-690494W3GN11000_F.jpg?v=3",
+            "./balenciaga/img/track2-black_white-1.jpg",
         ],
-        href: "https://google.com",
+        href: "./balenciaga/balenciaga.html#track_title",
+        models: 5,
     },
     {
-        title: 'balenciaga defender',
+        title: 'balenciaga runner',
         images: [
-            "https://balenciaga.dam.kering.com/m/27ee2e98d9a41441/Large-685613W2RA61000_F.jpg?v=4",
-            "https://balenciaga.dam.kering.com/m/53dc0467b734d93f/Large-685613W2RA69700_F.jpg?v=6"
+            "./balenciaga/img/runner-black-1.jpg",
+            "./balenciaga/img/runner-multicolor-white_black-1.jpg",
+            "./balenciaga/img/runner-graffiti-black-1.jpg",
+            "https://balenciaga.dam.kering.com/m/584174b2c523b16a/Large-772774W3RBT1000_F.jpg?v=6",
+            "https://balenciaga.dam.kering.com/m/4b34eb8a4d5105cd/Large-772774WRUNG9010_F.jpg?v=1",
+            "https://balenciaga.dam.kering.com/m/200868570badeafa/Large-779066W3RXP2000_F.jpg?v=4",
         ],
-        href: "https://google.com",
+        href: "./balenciaga/balenciaga.html#runner_title",
+        models: 6,
+    },
+    {
+        title: 'balenciaga triple s',
+        images: [
+            "https://balenciaga.dam.kering.com/m/3854d991a1d9606c/Large-524039W2FW19700_F.jpg?v=4",
+            "./balenciaga/img/triple-s-logotype-white-1.jpg",
+            "./balenciaga/img/triple-s-adidas-black-1.jpg",
+            "./balenciaga/img/triple-s-faded-black-1.jpg",
+        ],
+        href: "./balenciaga/balenciaga.html#triple_s_title",
+        models: 4,
     },
     // {
     //     title: 'balenciaga 10xl',
@@ -111,11 +120,12 @@ const balenciagaMainMenu = [
 const parentContainer = document.querySelector('.mein-menu');
 
 class MainMenu {
-    constructor(title, images, href, parent) {
+    constructor(title, images, href, parent, models) {
         this.title = title;
         this.images = images;
         this.parent = parent;
         this.href = href;
+        this.models = models;
     }
 
     render() {
@@ -136,7 +146,7 @@ class MainMenu {
                 <div class="swiper-button-next"></div>
             </div>
             <h3 class="oswald-medium">${this.title}</h3>
-            <a href=${this.href} class="view-more-btn montserrat-light">more</a>
+            <p class="montserrat-light">${this.models} models</p
         `;
 
         this.parent.append(element);
@@ -156,5 +166,5 @@ class MainMenu {
 }
 
 balenciagaMainMenu.forEach(item => {
-    new MainMenu(item.title, item.images, item.href, parentContainer).render();
+    new MainMenu(item.title, item.images, item.href, parentContainer, item.models).render();
 });

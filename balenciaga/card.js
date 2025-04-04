@@ -1,3 +1,9 @@
+const three_xl = document.querySelector('#three_xl');
+const track = document.querySelector('#track');
+const runner = document.querySelector('#runner');
+const triple_s = document.querySelector('#triple_s');
+const others = document.querySelector('#others');
+
 const balenciagaMainMenu = [
     {
         title: 'balenciaga 3xl',
@@ -15,6 +21,7 @@ const balenciagaMainMenu = [
         ],
         colors: 10,
         href: "./3xl.html",
+        parent: three_xl,
     },
     {
         title: 'balenciaga 3xl multicolor',
@@ -29,6 +36,7 @@ const balenciagaMainMenu = [
         ],
         colors: 7,
         href: "./3xl-multicolor.html",
+        parent: three_xl,
     },
     {
         title: 'balenciaga 3xl extreme laces',
@@ -41,6 +49,7 @@ const balenciagaMainMenu = [
         ],
         colors: 5,
         href: "./3xl-extreme-laces.html",
+        parent: three_xl,
     },
     {
         title: 'balenciaga & under armour 3xl',
@@ -50,6 +59,7 @@ const balenciagaMainMenu = [
         ],
         colors: 2,
         href: "./3xl-under_armour.html",
+        parent: three_xl,
     },
     {
         title: 'balenciaga 3xl ski',
@@ -60,6 +70,7 @@ const balenciagaMainMenu = [
         ],
         colors: 3,
         href: "./3xl-ski.html",
+        parent: three_xl,
     },
     {
         title: 'balenciaga track',
@@ -75,6 +86,7 @@ const balenciagaMainMenu = [
         ],
         colors: 8,
         href: "./track.html",
+        parent: track,
     },
     {
         title: 'balenciaga track graffiti',
@@ -86,6 +98,7 @@ const balenciagaMainMenu = [
         ],
         colors: 4,
         href: "./track-graffiti.html",
+        parent: track,
     },
     {
         title: 'balenciaga track led',
@@ -95,6 +108,7 @@ const balenciagaMainMenu = [
         ],
         colors: 2,
         href: "./track-led.html",
+        parent: track,
     },
     {
         title: 'balenciaga track 2.0',
@@ -109,6 +123,7 @@ const balenciagaMainMenu = [
         ],
         colors: 7,
         href: "./track2.html",
+        parent: track,
     },
     {
         title: 'balenciaga track 2.0 multicolor',
@@ -123,41 +138,7 @@ const balenciagaMainMenu = [
         ],
         colors: 7,
         href: "./track2-multicolor.html",
-    },
-    {
-        title: 'balenciaga defender',
-        images: [
-            "https://balenciaga.dam.kering.com/m/27ee2e98d9a41441/Large-685613W2RA61000_F.jpg?v=4",
-            "https://balenciaga.dam.kering.com/m/53dc0467b734d93f/Large-685613W2RA69700_F.jpg?v=6",
-            "./img/defender-grey-1.jpg",
-            "./img/defender-dark-green-1.jpg",
-            "./img/defender-white-1.jpg",
-        ],
-        colors: 5,
-        href: "./defender.html",
-    },
-    {
-        title: 'balenciaga 10xl',
-        images: [
-            "https://balenciaga.dam.kering.com/m/560e23f9969803e4/eCom-792779W2MV21000_F.jpg?v=2",
-            "./img/10xl-white-1.jpg",
-            "./img/10xl-white_orange-1.jpg",
-            "./img/10xl-grey_pink-1.jpg"
-        ],
-        colors: 4,
-        href: "./10xl.html",
-    },
-    {
-        title: 'balenciaga 6xl',
-        images: [
-            "https://balenciaga.dam.kering.com/m/617971650f6142f1/Large-815859W2MV21012_F.jpg?v=1",
-            "https://balenciaga.dam.kering.com/m/4f46d9a6f4fa8b25/Large-815859W2MV29000_F.jpg?v=2",
-            "https://balenciaga.dam.kering.com/m/7db9fd2107849461/eCom-815853W2MV22211_F.jpg?v=1",
-            "./img/6xl-grey_green-1.jpg",
-            "./img/6xl-white_purple-1.jpg",
-        ],
-        colors: 5,
-        href: "./6xl.html",
+        parent: track,
     },
     {
         title: 'balenciaga runner',
@@ -168,6 +149,7 @@ const balenciagaMainMenu = [
         ],
         colors: 3,
         href: "./runner.html",
+        parent: runner,
     },
     {
         title: 'balenciaga runner multicolor',
@@ -182,6 +164,7 @@ const balenciagaMainMenu = [
         ],
         colors: 7,
         href: "./runner-multicolor.html",
+        parent: runner,
     },
     {
         title: 'balenciaga runner graffiti',
@@ -191,6 +174,7 @@ const balenciagaMainMenu = [
         ],
         colors: 2,
         href: "./runner-graffiti.html",
+        parent: runner,
     },
     {
         title: 'balenciaga runner new',
@@ -201,6 +185,7 @@ const balenciagaMainMenu = [
         ],
         colors: 3,
         href: "./runner-new.html",
+        parent: runner,
     },
     {
         title: 'balenciaga runner new multicolor',
@@ -218,6 +203,7 @@ const balenciagaMainMenu = [
         ],
         colors: 10,
         href: "./runner-new-multicolor.html",
+        parent: runner,
     },
     {
         title: 'balenciaga runner 2.0',
@@ -229,6 +215,7 @@ const balenciagaMainMenu = [
         ],
         colors: 4,
         href: "./runner2.html",
+        parent: runner,
     },
     {
         title: 'balenciaga triple s',
@@ -243,6 +230,7 @@ const balenciagaMainMenu = [
         ],
         colors: 7,
         href: "./triple-s.html",
+        parent: triple_s,
     },
     {
         title: 'balenciaga triple s logotypes',
@@ -254,6 +242,7 @@ const balenciagaMainMenu = [
         ],
         colors: 4,
         href: "./triple-s-logotypes.html",
+        parent: triple_s,
     },
     {
         title: 'balenciaga & adidas triple s',
@@ -264,6 +253,7 @@ const balenciagaMainMenu = [
         ],
         colors: 3,
         href: "./triple-s-adidas.html",
+        parent: triple_s,
     },
     {
         title: 'balenciaga triple s faded',
@@ -275,6 +265,45 @@ const balenciagaMainMenu = [
         ],
         colors: 4,
         href: "./triple-s-faded.html",
+        parent: triple_s,
+    },
+    {
+        title: 'balenciaga defender',
+        images: [
+            "https://balenciaga.dam.kering.com/m/27ee2e98d9a41441/Large-685613W2RA61000_F.jpg?v=4",
+            "https://balenciaga.dam.kering.com/m/53dc0467b734d93f/Large-685613W2RA69700_F.jpg?v=6",
+            "./img/defender-grey-1.jpg",
+            "./img/defender-dark-green-1.jpg",
+            "./img/defender-white-1.jpg",
+        ],
+        colors: 5,
+        href: "./defender.html",
+        parent: others,
+    },
+    {
+        title: 'balenciaga 10xl',
+        images: [
+            "https://balenciaga.dam.kering.com/m/560e23f9969803e4/eCom-792779W2MV21000_F.jpg?v=2",
+            "./img/10xl-white-1.jpg",
+            "./img/10xl-white_orange-1.jpg",
+            "./img/10xl-grey_pink-1.jpg"
+        ],
+        colors: 4,
+        href: "./10xl.html",
+        parent: others,
+    },
+    {
+        title: 'balenciaga 6xl',
+        images: [
+            "https://balenciaga.dam.kering.com/m/617971650f6142f1/Large-815859W2MV21012_F.jpg?v=1",
+            "https://balenciaga.dam.kering.com/m/4f46d9a6f4fa8b25/Large-815859W2MV29000_F.jpg?v=2",
+            "https://balenciaga.dam.kering.com/m/7db9fd2107849461/eCom-815853W2MV22211_F.jpg?v=1",
+            "./img/6xl-grey_green-1.jpg",
+            "./img/6xl-white_purple-1.jpg",
+        ],
+        colors: 5,
+        href: "./6xl.html",
+        parent: others,
     },
     {
         title: 'balenciaga cargo',
@@ -291,6 +320,7 @@ const balenciagaMainMenu = [
         ],
         colors: 9,
         href: "./cargo.html",
+        parent: others,
     },
     {
         title: 'balenciaga circuit',
@@ -302,6 +332,7 @@ const balenciagaMainMenu = [
         ],
         colors: 4,
         href: "./circuit.html",
+        parent: others,
     },
     {
         title: 'balenciaga stapler',
@@ -314,6 +345,7 @@ const balenciagaMainMenu = [
         ],
         colors: 5,
         href: "./stapler.html",
+        parent: others,
     },
     {
         title: 'balenciaga x-pander',
@@ -329,6 +361,7 @@ const balenciagaMainMenu = [
         ],
         colors: 8,
         href: "./x-pander.html",
+        parent: others,
     },
     {
         title: 'balenciaga hike',
@@ -339,10 +372,9 @@ const balenciagaMainMenu = [
         ],
         colors: 3,
         href: "./hike.html",
+        parent: others,
     },
 ];
-
-const parentContainer = document.querySelector('.mein-menu');
 
 class MainMenu {
     constructor(title, images, href, parent, colors) {
@@ -391,5 +423,5 @@ class MainMenu {
 }
 
 balenciagaMainMenu.forEach(item => {
-    new MainMenu(item.title, item.images, item.href, parentContainer, item.colors).render();
+    new MainMenu(item.title, item.images, item.href, item.parent, item.colors).render();
 });
