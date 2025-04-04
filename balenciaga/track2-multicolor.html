@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        header {
+            position: static;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <!-- <a href="./balenciaga.html" class="go-back-btn">
+            <svg fill="#000000" height="50px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 242.133 242.133" xml:space="preserve" transform="rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_9_" d="M237.739,216.526L62.73,41.517l15.91-15.91c4.29-4.29,5.573-10.742,3.252-16.347C79.57,3.655,74.1,0,68.033,0 H15.001c-8.284,0-15,6.716-15,15v53.033c0,6.067,3.655,11.537,9.26,13.858c1.856,0.769,3.805,1.142,5.737,1.142 c3.904,0,7.741-1.524,10.61-4.394l15.91-15.91l175.009,175.01c2.929,2.929,6.768,4.394,10.606,4.394 c3.839,0,7.678-1.464,10.606-4.394C243.597,231.881,243.597,222.384,237.739,216.526z"></path> </g></svg>
+        </a> -->
+        <section class="item">
+            <div class="galary"></div>
+
+            <div class="item-info">
+                <h2 class="oswald-medium">3xl Sneaker</h2>
+                <div class="colors">
+                    <!-- Кнопки цветов будут добавляться динамически -->
+                </div>
+                <div class="descr montserrat-light">
+                    <p>Price</p>
+                    <ul>
+                        <li>Excellent Quality - 5400 ₴</li>
+                        <li>Good Quality - 4600 ₴</li>
+                        <li>Middle Quality - 3800 ₴</li>
+                    </ul>
+                    <p>Sizes: 35-45</p>
+                    <p>Отправка в течении 12-14 рабочих дней</p>
+                    <a href="https://t.me/kirito_ls" class="view-all-btn">заказать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./../../gallary.js"></script>
+    <script src="./../../script.js"></script>
+    <script>
+        const commonInfo = {
+            prices: {
+                excellent: "5400 ₴",
+                good: "4600 ₴",
+                middle: "3800 ₴"
+            },
+            sizes: "35-45",
+            shipping: "Отправка в течении 12-14 рабочих дней"
+        };
+
+        const colorsData = [
+            {
+                colorName: "black-white",
+                images: [
+                    "./img/track2-black_white-1.jpg",
+                    "https://media.zid.store/54503126-dbb9-4aa0-8211-35542f4f7dc4/80fc924a-02f8-470d-bed5-0baff7721c9d.png",
+                    "https://media.zid.store/54503126-dbb9-4aa0-8211-35542f4f7dc4/ef035b23-06ad-49e1-959e-5bba1a6df9c8.png",
+                ],
+                name: "Balenciaga track 2.0 multicolor sneaker in black/white",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "beige-black",
+                images: [
+                    "./img/track2-beige_black-1.jpg",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/853/353/original/601652_03.jpg.jpeg?action=crop&width=1000",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/853/362/original/601652_08.jpg.jpeg?action=crop&width=1000",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/853/359/original/601652_06.jpg.jpeg?action=crop&width=1000",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/853/355/original/601652_04.jpg.jpeg?action=crop&width=1000",
+                ],
+                name: "Balenciaga track 2.0 multicolor sneaker in beige/black",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "5100 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-orange",
+                images: [
+                    "./img/track2-white_orange-1.jpg",
+                    "https://images.vestiairecollective.com/images/resized/w=768,q=75,f=auto,/produit/baskets-balenciaga-track-en-cuir-rouge-20771753-6_1.jpg",
+                    "https://images.vestiairecollective.com/images/resized/w=768,q=75,f=auto,/produit/baskets-balenciaga-track-en-cuir-rouge-20771753-7_1.jpg",
+                    "https://images.vestiairecollective.com/images/resized/w=768,q=75,f=auto,/produit/baskets-balenciaga-track-en-cuir-rouge-20771753-5_1.jpg",
+                    "https://images.vestiairecollective.com/images/resized/w=768,q=75,f=auto,/produit/red-leather-track-balenciaga-trainers-20771753-8_1.jpg",
+                ],
+                name: "Balenciaga track 2.0 multicolor sneaker in white/orange",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-red",
+                images: [
+                    "./img/track2-white_red-1.jpg",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/084/035/588/original/685819_03.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/084/035/577/original/685819_08.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/084/035/584/original/685819_04.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/084/035/582/original/685819_06.jpg.jpeg?action=crop&width=600",
+                ],
+                name: "Balenciaga track 2.0 multicolor sneaker in white/red",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "blue-red",
+                images: [
+                    "./img/track2-blue_red-1.jpg",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/080/336/837/original/538701_08.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/080/336/827/original/538701_03.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/080/336/831/original/538701_06.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/080/336/828/original/538701_04.jpg.jpeg?action=crop&width=600",
+                ],
+                name: "Balenciaga track 2.0 multicolor sneaker in blue/red",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "grey-red",
+                images: [
+                    "./img/track2-grey_red-1.jpg",
+                    "https://cdn.clothbase.com/uploads/33a77e70-c447-414f-b4ed-1b5c4d0b140d/192342F128022_5.jpg",
+                    "https://cdn.clothbase.com/uploads/56f10b20-fb76-42fc-9222-c7034019db57/192342F128022_3.jpg",
+                    "https://cdn.clothbase.com/uploads/920b0f34-5c18-454c-95a2-04233b45611a/192342F128022_4.jpg",
+                ],
+                name: "Balenciaga track 2.0 multicolor sneaker in grey/red",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "black-orange",
+                images: [
+                    "./img/track2-black_orange-1.jpg",
+                    "https://cdn.clothbase.com/uploads/0d6d424d-5ad5-4ecf-a894-484b6aa90d37/image.jpg",
+                    "https://cdn.clothbase.com/uploads/0f2a022e-50b0-4d02-9ed5-1e54d80b6b9b/image.jpg",
+                    "https://cdn.clothbase.com/uploads/fe79895e-f219-4189-a3af-2c3374114410/image.jpg",
+                    "https://cdn.clothbase.com/uploads/474cc0b3-2a29-421c-85da-f4e3362ccb79/image.jpg",
+                ],
+                name: "Balenciaga track 2.0 multicolor sneaker in black/orange",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+        ];
+
+        updateContent("black-white", commonInfo, colorsData);
+        setColorButtons(colorsData, commonInfo);
+
+    </script>
+</body>
+</html>

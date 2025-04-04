@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        header {
+            position: static;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <!-- <a href="./balenciaga.html" class="go-back-btn">
+            <svg fill="#000000" height="50px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 242.133 242.133" xml:space="preserve" transform="rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_9_" d="M237.739,216.526L62.73,41.517l15.91-15.91c4.29-4.29,5.573-10.742,3.252-16.347C79.57,3.655,74.1,0,68.033,0 H15.001c-8.284,0-15,6.716-15,15v53.033c0,6.067,3.655,11.537,9.26,13.858c1.856,0.769,3.805,1.142,5.737,1.142 c3.904,0,7.741-1.524,10.61-4.394l15.91-15.91l175.009,175.01c2.929,2.929,6.768,4.394,10.606,4.394 c3.839,0,7.678-1.464,10.606-4.394C243.597,231.881,243.597,222.384,237.739,216.526z"></path> </g></svg>
+        </a> -->
+        <section class="item">
+            <div class="galary"></div>
+
+            <div class="item-info">
+                <h2 class="oswald-medium">3xl Sneaker</h2>
+                <div class="colors">
+                    <!-- Кнопки цветов будут добавляться динамически -->
+                </div>
+                <div class="descr montserrat-light">
+                    <p>Price</p>
+                    <ul>
+                        <li>Excellent Quality - 5400 ₴</li>
+                        <li>Good Quality - 4600 ₴</li>
+                        <li>Middle Quality - 3800 ₴</li>
+                    </ul>
+                    <p>Sizes: 35-45</p>
+                    <p>Отправка в течении 12-14 рабочих дней</p>
+                    <a href="https://t.me/kirito_ls" class="view-all-btn">заказать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./../../gallary.js"></script>
+    <script src="./../../script.js"></script>
+    <script>
+        const commonInfo = {
+            prices: {
+                excellent: "5400 ₴",
+                good: "4600 ₴",
+                middle: "3800 ₴"
+            },
+            sizes: "35-45",
+            shipping: "Отправка в течении 12-14 рабочих дней"
+        };
+
+        const colorsData = [
+            {
+                colorName: "black",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/61e97b5971411bf7/Large-690494W3GN11000_F.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/30740d184437ac61/Large-690494W3GN11000_J.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/450e18a4d3a37b85/Large-690494W3GN11000_I.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/6187c94409aed525/Large-690494W3GN11000_D.jpg?v=3",
+                ],
+                name: "Balenciaga track 2.0 sneaker in black",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "5200 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white",
+                images: [
+                    "./img/track2-white-1.jpg",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/853/341/original/564684_03.jpg.jpeg?action=crop&width=1000",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/853/347/original/564684_04.jpg.jpeg?action=crop&width=1000",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/853/344/original/564684_06.jpg.jpeg?action=crop&width=1000",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/100/853/346/original/564684_08.jpg.jpeg?action=crop&width=1000",
+                ],
+                name: "Balenciaga track 2.0 sneaker in white",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "beige",
+                images: [
+                    "./img/track2-beige-1.jpg",
+                    "https://cdn-img.poizonapp.com/pro-img/cut-img/20230801/f38a1494af4246f398b7d3eb2f75598b.jpg?x-oss-",
+                    "https://cdn-img.poizonapp.com/pro-img/cut-img/20230801/a6c1e3e2e39046b3a796f9675172fcf5.jpg?x-oss-",
+                    "https://cdn-img.poizonapp.com/pro-img/cut-img/20230801/f28a22731a514c21890883a35b2ded7d.jpg?x-oss-",
+                    "https://cdn-img.poizonapp.com/pro-img/cut-img/20230801/612ace89a50f41ac8949d4dedd7fe036.jpg?x-oss-process=image/format,webp/resize,w_800",
+                ],
+                name: "Balenciaga track 2.0 sneaker in beige",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "grey",
+                images: [
+                    "./img/track2-grey-1.jpg",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/102/086/011/original/751038_08.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/102/086/006/original/751038_03.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/102/086/013/original/751038_04.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/102/086/012/original/751038_06.jpg.jpeg?action=crop&width=600",
+                ],
+                name: "Balenciaga track 2.0 sneaker in grey",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "orange",
+                images: [
+                    "./img/track2-orange-1.jpg",
+                    "https://www.yoox.com/images/items/17/17672490AH_14_r.jpg?impolicy=crop&width=387&height=490",
+                    "https://www.yoox.com/images/items/17/17672490AH_10_d.jpg",
+                    "https://www.yoox.com/images/items/17/17672490AH_14_e.jpg?impolicy=crop&width=387&height=490",
+                ],
+                name: "Balenciaga track 2.0 sneaker in orange",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "lime",
+                images: [
+                    "./img/track2-lime-1.jpg",
+                    "./img/track2-lime-2.jpg",
+                    "./img/track2-lime-3.jpg",
+                    "./img/track2-lime-4.jpg",
+                ],
+                name: "Balenciaga track 2.0 sneaker in lime",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "pink",
+                images: [
+                    "./img/track2-pink-1.jpg",
+                    "./img/track2-pink-2.jpg",
+                    "./img/track2-pink-3.jpg",
+                    "./img/track2-pink-4.jpg",
+                    "./img/track2-pink-5.jpg",
+                    "./img/track2-pink-6.jpg",
+                    "./img/track2-pink-7.jpg",
+                ],
+                name: "Balenciaga track 2.0 sneaker in pink",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+        ];
+
+        initializePage(colorsData, commonInfo);
+
+    </script>
+</body>
+</html>

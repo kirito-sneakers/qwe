@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        header {
+            position: static;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <!-- <a href="./balenciaga.html" class="go-back-btn">
+            <svg fill="#000000" height="50px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 242.133 242.133" xml:space="preserve" transform="rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_9_" d="M237.739,216.526L62.73,41.517l15.91-15.91c4.29-4.29,5.573-10.742,3.252-16.347C79.57,3.655,74.1,0,68.033,0 H15.001c-8.284,0-15,6.716-15,15v53.033c0,6.067,3.655,11.537,9.26,13.858c1.856,0.769,3.805,1.142,5.737,1.142 c3.904,0,7.741-1.524,10.61-4.394l15.91-15.91l175.009,175.01c2.929,2.929,6.768,4.394,10.606,4.394 c3.839,0,7.678-1.464,10.606-4.394C243.597,231.881,243.597,222.384,237.739,216.526z"></path> </g></svg>
+        </a> -->
+        <section class="item">
+            <div class="galary"></div>
+
+            <div class="item-info">
+                <h2 class="oswald-medium">3xl Sneaker</h2>
+                <div class="colors">
+                    <!-- Кнопки цветов будут добавляться динамически -->
+                </div>
+                <div class="descr montserrat-light">
+                    <p>Price</p>
+                    <ul>
+                        <li>Excellent Quality - 5400 ₴</li>
+                        <li>Good Quality - 4600 ₴</li>
+                        <li>Middle Quality - 3800 ₴</li>
+                    </ul>
+                    <p>Sizes: 35-45</p>
+                    <p>Отправка в течении 12-14 рабочих дней</p>
+                    <a href="https://t.me/kirito_ls" class="view-all-btn">заказать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./../../gallary.js"></script>
+    <script src="./../../script.js"></script>
+    <script>
+        const commonInfo = {
+            prices: {
+                excellent: "5400 ₴",
+                good: "4600 ₴",
+                middle: "3800 ₴"
+            },
+            sizes: "35-45",
+            shipping: "Отправка в течении 12-14 рабочих дней"
+        };
+
+        const colorsData = [
+            {
+                colorName: "black",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/472b885ecee44197/eCom-766034W3XR21000_F.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/2debb2271e44388c/Medium-766034W3XR21000_J.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/2debb2271e44388c/Medium-766034W3XR21000_J.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/2be6d103f05dc326/Medium-766034W3XR21000_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/46de148d27c536ad/Medium-766034W3XR21000_A.jpg?v=2",
+                    "./img/3xl-ski-accessory.jpg",
+                ],
+                name: "Balenciaga 3XL Ski sneaker in black",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/3bfa45de6b09a324/Medium-766034W3XR39710_F.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/5742e529c3b63c8d/Medium-766034W3XR39710_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/37991d914119414f/Medium-766033W3XR39710_D.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/2b64aa3d8fae754c/Medium-766034W3XR39710_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/12914b1498edbbfc/Medium-766033W3XR39710_A.jpg?v=1",
+                    "./img/3xl-ski-accessory.jpg",
+                ],
+                name: "Balenciaga 3XL Ski sneaker in white",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "yellow",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/662d727b0ad4af7f/Thumbnail-766034W3XR27010_F.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/2f090995593f08fc/Medium-766034W3XR27010_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/4cbcdb45ccdc46ab/Medium-766034W3XR27010_D.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/61fda2b4f03b44d6/Medium-766034W3XR27010_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/70c8068880a0672b/Thumbnail-766034W3XR27010_A.jpg?v=1",
+                    "./img/3xl-ski-accessory.jpg",
+                ],
+                name: "Balenciaga 3XL Ski sneaker in yellow",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+        ];
+
+        initializePage(colorsData, commonInfo);
+
+    </script>
+</body>
+</html>

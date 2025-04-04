@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        header {
+            position: static;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <!-- <a href="./balenciaga.html" class="go-back-btn">
+            <svg fill="#000000" height="50px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 242.133 242.133" xml:space="preserve" transform="rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_9_" d="M237.739,216.526L62.73,41.517l15.91-15.91c4.29-4.29,5.573-10.742,3.252-16.347C79.57,3.655,74.1,0,68.033,0 H15.001c-8.284,0-15,6.716-15,15v53.033c0,6.067,3.655,11.537,9.26,13.858c1.856,0.769,3.805,1.142,5.737,1.142 c3.904,0,7.741-1.524,10.61-4.394l15.91-15.91l175.009,175.01c2.929,2.929,6.768,4.394,10.606,4.394 c3.839,0,7.678-1.464,10.606-4.394C243.597,231.881,243.597,222.384,237.739,216.526z"></path> </g></svg>
+        </a> -->
+        <section class="item">
+            <div class="galary"></div>
+
+            <div class="item-info">
+                <h2 class="oswald-medium">3xl Sneaker</h2>
+                <div class="colors">
+                    <!-- Кнопки цветов будут добавляться динамически -->
+                </div>
+                <div class="descr montserrat-light">
+                    <p>Price</p>
+                    <ul>
+                        <li>Excellent Quality - 5400 ₴</li>
+                        <li>Good Quality - 4600 ₴</li>
+                        <li>Middle Quality - 3800 ₴</li>
+                    </ul>
+                    <p>Sizes: 35-45</p>
+                    <p>Отправка в течении 12-14 рабочих дней</p>
+                    <a href="https://t.me/kirito_ls" class="view-all-btn">заказать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./../../gallary.js"></script>
+    <script src="./../../script.js"></script>
+    <script>
+        const commonInfo = {
+            prices: {
+                excellent: "5400 ₴",
+                good: "4600 ₴",
+                middle: "3800 ₴"
+            },
+            sizes: "35-45",
+            shipping: "Отправка в течении 12-14 рабочих дней",
+        };
+
+        const colorsData = [
+            {
+                colorName: "black",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/4db4745c94b6ff59/Large-734731W3XL11010_F.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/522a8ecbceb73d7a/Large-734731W3XL11010_J.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/506d4a7b6b6b5e87/Large-734731W3XL11010_I.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/74798f69e385ee25/eCom-734731W3XL11010_L.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/29ae80588f52cf16/Large-734731W3XL11010_D.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/60872635fa85cd37/Large-734731W3XL11010_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/192935fba67efdb3/Large-734731W3XL11010_A.jpg?v=2"
+                ],
+                name: "3xl Sneaker in Black",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "4600 ₴",
+                    middle: "3800 ₴"
+                }
+            },
+            {
+                colorName: "black-white",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/612ece00eb41d4be/Large-734734W3XL11090_F.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/70566490bef7b9c0/Large-734734W3XL11090_J.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/22a2b95f25db6e00/Large-734734W3XL11090_I.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/27bcaec23dd194ee/eCom-734734W3XL11090_L.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/39a6f86113f973f7/Large-734734W3XL11090_D.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/6bc834a8adf0b409/Large-734734W3XL11090_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/1ad8e2243d89180e/Large-734734W3XL11090_A.jpg?v=2"
+                ],
+                name: "3xl Sneaker in Black/White",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "4600 ₴",
+                    middle: "3800 ₴"
+                }
+            },
+            {
+                colorName: "white",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/3abf32c24abe9661/Large-734734W3XL19000_F.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/257866c1cf45ca83/Large-734734W3XL19000_J.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/671ae8eab8858164/Large-734734W3XL19000_I.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/7ef6d2b5589a24ba/eCom-734734W3XL19000_L.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/701556ae678dc11c/Large-734734W3XL19000_D.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/3427ce10f4526e36/Large-734734W3XL19000_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/4cbb52e91121028d/Large-734734W3XL19000_A.jpg?v=2"
+                ],
+                name: "3xl Sneaker in White",
+                prices: {
+                    excellent: "",
+                    good: "4600 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-black",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/6f889dcc9cc9b0af/Large-734734W3XL49710_F.jpg?v=7",
+                    "https://balenciaga.dam.kering.com/m/1b20d9fe2b09c334/Large-734734W3XL49710_J.jpg?v=6",
+                    "https://balenciaga.dam.kering.com/m/42544e22fc0e86b7/Large-734734W3XL49710_I.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/6da57074de0367f4/eCom-734731W3XL49710_L.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/70d04bfb2534fe57/eCom-734734W3XL49710_L.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/53d4cfe4d155e4d1/Large-734734W3XL49710_E.jpg?v=5",
+                ],
+                name: "3xl Sneaker in White/black",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "4600 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "grey",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/5b59212c708e8d14/Large-734734W3XL11210_F.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/78d191119118180e/Large-734734W3XL11210_J.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/49a5fe576edc53c6/Large-734734W3XL11210_I.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/72ca94ef3f2a0dfd/eCom-734734W3XL11210_L.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/638f8dcc30d0e3b8/Large-734734W3XL11210_D.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/52ac7fb02c23f037/Large-734734W3XL11210_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/5e927fe1feeac4b4/Large-734734W3XL11210_A.jpg?v=2"
+                ],
+                name: "3xl Sneaker in Grey",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "4600 ₴",
+                    middle: "3800 ₴"
+                }
+            },
+            {
+                colorName: "white-grey",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/8e8063f68be15dd/Large-734734W3XL51219_F.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/6ade3bc594bede7b/Large-734734W3XL51219_J.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/781f0beff446659/Large-734734W3XL51219_I.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/2baff4413c1ec1d/eCom-734734W3XL51219_L.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/1a7d1fbfcb311f5b/Large-734734W3XL51219_D.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/592271fa28f4e738/Large-734734W3XL51219_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/7df990667de49768/Large-734734W3XL51219_A.jpg?v=2"
+                ],
+                name: "3xl Sneaker in grey/white",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "4600 ₴",
+                    middle: "3800 ₴"
+                }
+            },
+            {
+                colorName: "beige",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/b24adf190b4b621/Large-734734W3XL49191_F.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/41d9c431ac06faea/Large-734734W3XL49191_J.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/84e46e0e1cd30f2/Large-734734W3XL49191_I.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/c54e90a4d0644ab/eCom-734734W3XL49191_L.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/33257d805731918b/Large-734734W3XL49191_D.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/1c949d138772691d/Large-734734W3XL49191_E.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/64aa3616d22b9e37/Large-734734W3XL49191_A.jpg?v=3"
+                ],
+                name: "3xl Sneaker in light beige",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "4600 ₴",
+                    middle: "3800 ₴"
+                }
+            },
+            {
+                colorName: "taupe",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/7398af7893f3cacc/Large-734734W3XL52800_F.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/dc13eee45fe4310/Large-734734W3XL52800_J.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/7b394c1281f1cab6/Large-734734W3XL52800_I.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/13064d808925a5d3/eCom-734734W3XL52800_L.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/e7bfe3baffc7cd8/Large-734734W3XL52800_D.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/519d839b9feaf2fa/Large-734734W3XL52800_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/5bc162a91e063c73/Large-734734W3XL52800_A.jpg?v=2"
+                ],
+                name: "3xl Sneaker in taupe",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-silver",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/4613c58ee926830b/Medium-734734WTRMH9080_F.jpg?v=2",
+                    "https://cdn-images.farfetch-contents.com/25/57/11/83/25571183_55596150_2048.jpg",
+                    "https://balenciaga.dam.kering.com/m/2ea2702d150516c8/Medium-734734WTRMH9080_I.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/5d021bb7e183b279/Medium-734734WTRMH9080_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/534ff6eb05e94e79/Medium-734734WTRMH9080_A.jpg?v=2",
+                ],
+                name: "3xl Sneaker Mesh in White/Silver",
+                prices: {
+                    excellent: "5000 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-beige",
+                images: [
+                    "./img/3xl-ripped-1.jpg",
+                    "https://static.cdn.oskelly.ru/product/2704087/item-cb7a9fe9-a7fe-4429-9823-0fd5b92e975e.webp",
+                    "https://static.cdn.oskelly.ru/product/2704087/item-d975c6b7-1a07-4621-acfa-175c142bb2e1.webp",
+                    "https://static.cdn.oskelly.ru/product/2704087/item-dd5315f2-487f-4081-a934-34a4f6545fc6.webp",
+                ],
+                name: "3xl Sneaker Ripped in White",
+                prices: {
+                    excellent: "5000 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+        ];
+
+        initializePage(colorsData, commonInfo);
+    </script>
+</body>
+</html>

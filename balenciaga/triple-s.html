@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        header {
+            position: static;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <!-- <a href="./balenciaga.html" class="go-back-btn">
+            <svg fill="#000000" height="50px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 242.133 242.133" xml:space="preserve" transform="rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_9_" d="M237.739,216.526L62.73,41.517l15.91-15.91c4.29-4.29,5.573-10.742,3.252-16.347C79.57,3.655,74.1,0,68.033,0 H15.001c-8.284,0-15,6.716-15,15v53.033c0,6.067,3.655,11.537,9.26,13.858c1.856,0.769,3.805,1.142,5.737,1.142 c3.904,0,7.741-1.524,10.61-4.394l15.91-15.91l175.009,175.01c2.929,2.929,6.768,4.394,10.606,4.394 c3.839,0,7.678-1.464,10.606-4.394C243.597,231.881,243.597,222.384,237.739,216.526z"></path> </g></svg>
+        </a> -->
+        <section class="item">
+            <div class="galary"></div>
+
+            <div class="item-info">
+                <h2 class="oswald-medium">3xl Sneaker</h2>
+                <div class="colors">
+                    <!-- Кнопки цветов будут добавляться динамически -->
+                </div>
+                <div class="descr montserrat-light">
+                    <p>Price</p>
+                    <ul>
+                        <li>Excellent Quality - 5400 ₴</li>
+                        <li>Good Quality - 4600 ₴</li>
+                        <li>Middle Quality - 3800 ₴</li>
+                    </ul>
+                    <p>Sizes: 35-45</p>
+                    <p>Отправка в течении 12-14 рабочих дней</p>
+                    <a href="https://t.me/kirito_ls" class="view-all-btn">заказать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./../../gallary.js"></script>
+    <script src="./../../script.js"></script>
+    <script>
+        const commonInfo = {
+            prices: {
+                excellent: "5400 ₴",
+                good: "4600 ₴",
+                middle: "3800 ₴"
+            },
+            sizes: "35-45",
+            shipping: "Отправка в течении 12-14 рабочих дней"
+        };
+
+        const colorsData = [
+            {
+                colorName: "beige",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/3854d991a1d9606c/Large-524039W2FW19700_F.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/4c5f218186ba8c62/Large-524039W2FW19700_I.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/7cda60c733a0e160/Large-524039W2FW19700_L.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/2791d16a8047698/Large-524039W2FW19700_D.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/1e9c92cf949795a2/Large-524039W2FW19700_E.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/128ec813692570c0/Large-524039W2FW19700_A.jpg?v=4",
+                ],
+                name: "Balenciaga triple s sneaker in beige",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "black-red",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/3af9cb97f6786d10/Large-533882W09OM1000_F.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/4edf77093fb399c1/eCom-533882W09OM1000_I.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/2f55537a90e8304a/Large-533882W09OM1000_D.jpg?v=6",
+                ],
+                name: "Balenciaga triple s sneaker in black/red",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "4800 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-red",
+                images: [
+                    "./img/triple-s-white_red-1.jpg",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/101/701/840/original/583453_08.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/101/701/841/original/583453_03.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/101/701/836/original/583453_06.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/101/701/839/original/583453_04.jpg.jpeg?action=crop&width=600",
+                ],
+                name: "Balenciaga triple s sneaker in white-red",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "4800 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "beige-red",
+                images: [
+                    "./img/triple-s-beige_red-1.jpg",
+                    "https://cdn.theluxurycloset.com/uploads/opt/products/full/luxury-women-balenciaga-used-shoes-p540599-009.jpg",
+                    "https://cdn.theluxurycloset.com/uploads/opt/products/full/luxury-women-balenciaga-used-shoes-p540599-001.jpg",
+                    "https://cdn.theluxurycloset.com/uploads/opt/products/full/luxury-women-balenciaga-used-shoes-p540599-003.jpg",
+                ],
+                name: "Balenciaga triple s sneaker in beige/red",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "4800 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-green",
+                images: [
+                    "./img/triple-s-white_green-1.jpg",
+                    "https://images.vestiairecollective.com/images/resized/w=768,q=75,f=auto,/produit/multicolour-cloth-triple-s-balenciaga-trainers-39023920-2_1.jpg",
+                    "https://images.vestiairecollective.com/images/resized/w=768,q=75,f=auto,/produit/multicolour-cloth-triple-s-balenciaga-trainers-39023920-3_1.jpg",
+                ],
+                name: "Balenciaga triple s sneaker in white/green",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "4800 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "black",
+                images: [
+                    "./img/triple-s-black-1.jpg",
+                    "https://i.ebayimg.com/images/g/GvQAAOSwgFxnINiL/s-l1600.webp",
+                    "https://i.ebayimg.com/images/g/4iQAAOSwO7JnINiL/s-l1600.webp",
+                    "https://i.ebayimg.com/images/g/PJsAAOSwlNBnINiL/s-l1600.webp",
+                    "https://i.ebayimg.com/images/g/F98AAOSwPahnINiL/s-l1600.webp",
+                    "https://i.ebayimg.com/images/g/HCsAAOSwuQRnINiL/s-l1600.webp",
+                ],
+                name: "Balenciaga triple s leather sneaker in black",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white",
+                images: [
+                    "./img/triple-s-white-1.jpg",
+                    "https://images.vestiairecollective.com/images/resized/w=1024,q=75,f=auto,/produit/baskets-balenciaga-triple-s-en-cuir-blanc-50664570-1_2.jpg",
+                    "https://images.vestiairecollective.com/images/resized/w=768,q=75,f=auto,/produit/white-leather-triple-s-balenciaga-trainers-50664570-4_2.jpg",
+                    "https://images.vestiairecollective.com/images/resized/w=768,q=75,f=auto,/produit/white-leather-triple-s-balenciaga-trainers-50664570-5_2.jpg",
+                    "https://images.vestiairecollective.com/images/resized/w=768,q=75,f=auto,/produit/white-leather-triple-s-balenciaga-trainers-50664570-7_2.jpg",
+                ],
+                name: "Balenciaga triple s leather sneaker in white",
+                prices: {
+                    excellent: "5800 ₴",
+                    good: "4800 ₴",
+                    middle: ""
+                }
+            },
+        ];
+
+        updateContent("beige", commonInfo, colorsData);
+        setColorButtons(colorsData, commonInfo);
+
+    </script>
+</body>
+</html>

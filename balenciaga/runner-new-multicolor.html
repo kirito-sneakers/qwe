@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        header {
+            position: static;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <!-- <a href="./balenciaga.html" class="go-back-btn">
+            <svg fill="#000000" height="50px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 242.133 242.133" xml:space="preserve" transform="rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_9_" d="M237.739,216.526L62.73,41.517l15.91-15.91c4.29-4.29,5.573-10.742,3.252-16.347C79.57,3.655,74.1,0,68.033,0 H15.001c-8.284,0-15,6.716-15,15v53.033c0,6.067,3.655,11.537,9.26,13.858c1.856,0.769,3.805,1.142,5.737,1.142 c3.904,0,7.741-1.524,10.61-4.394l15.91-15.91l175.009,175.01c2.929,2.929,6.768,4.394,10.606,4.394 c3.839,0,7.678-1.464,10.606-4.394C243.597,231.881,243.597,222.384,237.739,216.526z"></path> </g></svg>
+        </a> -->
+        <section class="item">
+            <div class="galary"></div>
+
+            <div class="item-info">
+                <h2 class="oswald-medium">3xl Sneaker</h2>
+                <div class="colors">
+                    <!-- Кнопки цветов будут добавляться динамически -->
+                </div>
+                <div class="descr montserrat-light">
+                    <p>Price</p>
+                    <ul>
+                        <li>Excellent Quality - 5400 ₴</li>
+                        <li>Good Quality - 4600 ₴</li>
+                        <li>Middle Quality - 3800 ₴</li>
+                    </ul>
+                    <p>Sizes: 35-45</p>
+                    <p>Отправка в течении 12-14 рабочих дней</p>
+                    <a href="https://t.me/kirito_ls" class="view-all-btn">заказать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./../../gallary.js"></script>
+    <script src="./../../script.js"></script>
+    <script>
+        const commonInfo = {
+            prices: {
+                excellent: "5400 ₴",
+                good: "",
+                middle: ""
+            },
+            sizes: "35-46",
+            shipping: "Отправка в течении 12-14 рабочих дней"
+        };
+
+        const colorsData = [
+            {
+                colorName: "white-black",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/4b34eb8a4d5105cd/Large-772774WRUNG9010_F.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/1f8347f4937eaf1a/Large-772774WRUNG9010_J.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/1d171180b5bcf7c0/Large-772774WRUNG9010_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/21cea80652b148ea/eCom-772774WRUNG9010_L.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/6b90e35db10fb660/Large-772774WRUNG9010_D.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/58e8c8cb15238b56/Large-772774WRUNG9010_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/1321f797e1a0def1/Large-772774WRUNG9010_A.jpg?v=1",
+                ],
+                name: "Balenciaga runner new multicolor in white/black",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "black-white",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/ab2a5f001bcf853/eCom-772774W3RMU9010_F.jpg?v=6",
+                    "https://balenciaga.dam.kering.com/m/60f858e744eacb31/Large-772774W3RMU9010_J.jpg?v=7",
+                    "https://balenciaga.dam.kering.com/m/42c94e4434424bd9/Large-772774W3RMU9010_I.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/6eddc383664637cf/Large-772774W3RMU9010_L.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/774c79033dde4eb1/Large-772774W3RMU9010_D.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/5031a168cbf54f6f/Large-772774W3RMU9010_E.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/1add9a040be2fbe7/Large-772774W3RMU9010_A.jpg?v=5",
+                ],
+                name: "Balenciaga runner new multicolor in black/white",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "grey-black",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/6f694142d11e732a/Large-772774W3RNY9012_F.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/3fb1a6980acca6b7/Large-772774W3RNY9012_J.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/23b8e7fae1a10e97/Large-772774W3RNY9012_I.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/3152b43537789eaa/Large-772774W3RNY9012_L.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/507fee3674341cce/Large-772774W3RNY9012_D.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/6402a303d1f1b9cc/Large-772774W3RNY9012_E.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/29b875bbce643e21/Large-772774W3RNY9012_A.jpg?v=3",
+                ],
+                name: "Balenciaga runner new multicolor in grey/black",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-blue",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/5d5a8f379ea7be2c/Large-772774WRUNG2410_F.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/72cabb59629c2e59/Large-772774WRUNG2410_J.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/3b5d629658771f51/eCom-772774WRUNG2410_I.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/380c656dab890d26/Large-772774WRUNG2410_L.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/1667ec68c65de936/Large-772774WRUNG2410_D.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/4d26c0e418f51569/Large-772774WRUNG2410_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/1149ef305f06fb26/Large-772774WRUNG2410_A.jpg?v=2",
+                ],
+                name: "Balenciaga runner new multicolor in white/blue",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "grey-blue",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/39772bfec61de839/Large-772774W3RNY4912_F.jpg?v=7",
+                    "https://balenciaga.dam.kering.com/m/7b3fb12f1cd77c76/Large-772774W3RNY4912_J.jpg?v=8",
+                    "https://balenciaga.dam.kering.com/m/609985139117654b/Large-772774W3RNY4912_I.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/d1307db5b18922a/Large-772774W3RNY4912_L.jpg?v=7",
+                    "https://balenciaga.dam.kering.com/m/6f1635749325bae0/Large-772774W3RNY4912_D.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/4d280754a0d53921/Large-772774W3RNY4912_E.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/40af35f5881f0840/Large-772774W3RNY4912_A.jpg?v=5",
+                ],
+                name: "Balenciaga runner new multicolor in grey/blue",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-green",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/16aa470bc3ef5695/Large-772767W3RMU9034_F.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/2377c65345a5168a/Large-772767W3RMU9034_J.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/3c4f761ec4c230e0/Large-772767W3RMU9034_I.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/7ef65a35f99936c6/Large-772767W3RMU9034_L.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/7ef65a35f99936c6/Large-772767W3RMU9034_L.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/1f8031e70dddb1fb/Large-772767W3RMU9034_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/22b5a8c6bd28f7b9/Large-772767W3RMU9034_A.jpg?v=2",
+                ],
+                name: "Balenciaga runner new multicolor in white/green",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "beige-yellow",
+                images: [
+                    "./img/runner-new-beige_yellow-1.jpg",
+                    "https://cdn.shopify.com/s/files/1/0603/3031/1875/files/2_2ac0959e-4b28-4f5c-b7e3-1d6f5d86292d_540x.jpg?=75&v=1716877898",
+                    "https://cdn.shopify.com/s/files/1/0603/3031/1875/files/main-square_845beb13-5642-487b-b596-273b778dc282_540x.jpg?=75&v=1716877898",
+                    "https://cdn.shopify.com/s/files/1/0603/3031/1875/files/3_dd484603-ee58-452f-a45c-4e9ffb17c57d_540x.jpg?=75&v=1716877899",
+                    "https://cdn.shopify.com/s/files/1/0603/3031/1875/files/1_3082d269-b053-44cf-a880-1d96513620dc_540x.jpg?=75&v=1716877898",
+                ],
+                name: "Balenciaga runner new multicolor in beige/green",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/1e4455c8dbbc0b5a/Large-772767W3RBW9645_F.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/7c4f3f4841cedab4/Large-772767W3RBW9645_J.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/5310ed4fcfb27c74/Large-772767W3RBW9645_I.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/88e509a918d369f/Large-772767W3RBW9645_L.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/39de191ddd2f8b4a/Large-772767W3RBW9645_D.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/43683b0124664a3d/Large-772767W3RBW9645_E.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/4a646dac797aacb2/Large-772767W3RBW9645_A.jpg?v=3",
+                ],
+                name: "Balenciaga runner new multicolor in white",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "grey",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/1b6a9d5789e85144/Large-772774W3RMU8123_F.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/77fe3a5fbbf76d99/Large-772774W3RMU8123_J.jpg?v=6",
+                    "https://balenciaga.dam.kering.com/m/62fa92be7099185/Large-772774W3RMU8123_I.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/29a1f560bb4cbffc/Large-772774W3RMU8123_L.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/3b21e55a095566d0/Large-772774W3RMU8123_D.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/7ba4b7fd98a8e82b/Large-772774W3RMU8123_E.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/33e987746ac6650e/Large-772774W3RMU8123_A.jpg?v=4",
+                ],
+                name: "Balenciaga runner new multicolor in grey",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-grey",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/204a268ba70874ee/Large-772767W3RMU1745_F.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/5ffe6719b02ec3d/Large-772767W3RMU1745_J.jpg?v=7",
+                    "https://balenciaga.dam.kering.com/m/131afd4bb784390d/Large-772767W3RMU1745_I.jpg?v=6",
+                    "https://balenciaga.dam.kering.com/m/d0104f37122569b/Large-772767W3RMU1745_L.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/4354833bf336fc6b/Large-772767W3RMU1745_D.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/26cc6db2cae704a1/Large-772767W3RMU1745_E.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/4adb5b930e9a335a/Large-772767W3RMU1745_A.jpg?v=5",
+                ],
+                name: "Balenciaga runner new multicolor in white/grey",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+        ];
+
+        updateContent("white-black", commonInfo, colorsData);
+        setColorButtons(colorsData, commonInfo);
+
+    </script>
+</body>
+</html>

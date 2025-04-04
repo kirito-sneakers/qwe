@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        header {
+            position: static;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <!-- <a href="./balenciaga.html" class="go-back-btn">
+            <svg fill="#000000" height="50px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 242.133 242.133" xml:space="preserve" transform="rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_9_" d="M237.739,216.526L62.73,41.517l15.91-15.91c4.29-4.29,5.573-10.742,3.252-16.347C79.57,3.655,74.1,0,68.033,0 H15.001c-8.284,0-15,6.716-15,15v53.033c0,6.067,3.655,11.537,9.26,13.858c1.856,0.769,3.805,1.142,5.737,1.142 c3.904,0,7.741-1.524,10.61-4.394l15.91-15.91l175.009,175.01c2.929,2.929,6.768,4.394,10.606,4.394 c3.839,0,7.678-1.464,10.606-4.394C243.597,231.881,243.597,222.384,237.739,216.526z"></path> </g></svg>
+        </a> -->
+        <section class="item">
+            <div class="galary"></div>
+
+            <div class="item-info">
+                <h2 class="oswald-medium">3xl Sneaker</h2>
+                <div class="colors">
+                    <!-- Кнопки цветов будут добавляться динамически -->
+                </div>
+                <div class="descr montserrat-light">
+                    <p>Price</p>
+                    <ul>
+                        <li>Excellent Quality - 5400 ₴</li>
+                        <li>Good Quality - 4600 ₴</li>
+                        <li>Middle Quality - 3800 ₴</li>
+                    </ul>
+                    <p>Sizes: 35-45</p>
+                    <p>Отправка в течении 12-14 рабочих дней</p>
+                    <a href="https://t.me/kirito_ls" class="view-all-btn">заказать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./../../gallary.js"></script>
+    <script src="./../../script.js"></script>
+    <script>
+        const commonInfo = {
+            prices: {
+                excellent: "5400 ₴",
+                good: "4600 ₴",
+                middle: "3800 ₴"
+            },
+            sizes: "35-45",
+            shipping: "Отправка в течении 12-14 рабочих дней"
+        };
+
+        const colorsData = [
+            {
+                colorName: "white-red",
+                images: [
+                    "./img/3xl-white_red-1.jpg",
+                    "https://www.radpresent.com/cdn/shop/files/Screenshot2023-05-05at1.41.21PM.png?v=1683265876",
+                    "https://cdn-img.poizonapp.com/pro-img/cut-img/20230801/6555fedc316c4331b1714da4184f3517.jpg?x-oss-process=image/format,webp/resize,w_800",
+                    "https://www.radpresent.com/cdn/shop/files/Screenshot2023-05-05at1.42.10PM.png?v=1683265876",
+                    "https://www.radpresent.com/cdn/shop/files/Screenshot2023-05-05at1.42.21PM.png?v=1683265876",
+                    "https://www.radpresent.com/cdn/shop/files/Screenshot2023-05-05at1.42.35PM.png?v=1683265876",
+                    "https://www.radpresent.com/cdn/shop/files/Screenshot2023-05-05at1.42.50PM.png?v=1683265876",
+                ],
+                name: "3XL sneaker Multicolor in white/red",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "4600 ₴",
+                    middle: "3800 ₴"
+                }
+            },
+            {
+                colorName: "grey-purple",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/2ad73ac34add0ce2/Large-734731W3XL51259_F.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/1a2d693c15ff426e/Large-734731W3XL51259_J.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/7684934a8f6de4ca/Large-734731W3XL51259_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/4c7e2f7800bb7373/eCom-734731W3XL51259_L.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/d01cc8d208df676/Large-734731W3XL51259_D.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/28fcbb03521a9ecc/Large-734731W3XL51259_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/77ab219e0e632679/Large-734731W3XL51259_A.jpg?v=1",
+                ],
+                name: "3XL sneaker Multicolor in grey/purple",
+                prices: {
+                    excellent: "4800 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "black-orange",
+                images: [
+                    "./img/3xl-black_orange-1.jpg",
+                    "https://cdn-img.poizonapp.com/pro-img/cut-img/20230923/a06f01f660124b9ab828e863ce5d111e.jpg?x-oss-",
+                    "https://cdn-img.poizonapp.com/pro-img/cut-img/20240724/c9bc3cd2cbc04bd7b56429c8e8b29255.jpg?x-oss-process=image/format,webp/resize,w_800",
+                    "https://cdn-img.poizonapp.com/pro-img/cut-img/20230923/6a8c76f5b0ed466a8d76d0793f080e18.jpg?x-oss-process=image/format,webp/resize,w_800",
+                    "https://cdn-img.poizonapp.com/pro-img/cut-img/20240724/96cab0d50e564b8fa6ace24850edac29.jpg?x-oss-process=image/format,webp/resize,w_800",
+                    "https://cdn-img.poizonapp.com/pro-img/cut-img/20240724/520c41f6d5584603ac515c4ce296fa78.jpg?x-oss-process=image/format,webp/resize,w_800",
+                    "https://cdn-img.poizonapp.com/pro-img/cut-img/20240724/4569c15d43234551a043753af7496481.jpg?x-oss-process=image/format,webp/resize,w_800"
+                ],
+                name: "3XL sneaker Multicolor in black-orange",
+                prices: {
+                    excellent: "",
+                    good: "4600 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "yellow-black",
+                images: [
+                    "./img/3xl-yellow_black-1.jpg",
+                    "https://www.radpresent.com/cdn/shop/files/Screenshot2023-05-05at3.11.26PM.png?v=1683270804&width=823",
+                    "https://www.radpresent.com/cdn/shop/files/Screenshot2023-05-05at3.11.51PM.png?v=1683270804&width=823",
+                    "https://www.radpresent.com/cdn/shop/files/Screenshot2023-05-05at3.12.01PM.png?v=1683270804&width=823",
+                    "https://www.radpresent.com/cdn/shop/files/Screenshot2023-05-05at3.11.37PM.png?v=1683270804&width=823",
+                ],
+                name: "3XL sneaker Multicolor in yellow/black",
+                prices: {
+                    excellent: "5400 ₴",
+                    good: "4600 ₴",
+                    middle: "3800 ₴"
+                }
+            },
+            {
+                colorName: "red",
+                images: [
+                    "./img/3xl-red-1.jpg",
+                    "https://cdn-images.farfetch-contents.com/20/13/20/55/20132055_54456639_1000.jpg",
+                    "https://cdn-images.farfetch-contents.com/20/13/20/55/20132055_54456640_1000.jpg",
+                    "https://cdn-images.farfetch-contents.com/20/13/20/55/20132055_54456637_1000.jpg",
+                ],
+                name: "3XL sneaker Multicolor in red",
+                prices: {
+                    excellent: "",
+                    good: "4600 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "pink",
+                images: [
+                    "./img/3xl-pink-1.jpg",
+                    "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2023%2F05%2Fbalenciaga-3xl-trainer-fluo-yellow-blue-mesh-pink-demna-release-information-008.jpg?q=90&w=1400&cbr=1&fit=max",
+                    "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2023%2F05%2Fbalenciaga-3xl-trainer-fluo-yellow-blue-mesh-pink-demna-release-information-009.jpg?q=90&w=1400&cbr=1&fit=max",
+                    "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2023%2F05%2Fbalenciaga-3xl-trainer-fluo-yellow-blue-mesh-pink-demna-release-information-11.jpeg?q=90&w=1400&cbr=1&fit=max",
+                    "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2023%2F05%2Fbalenciaga-3xl-trainer-fluo-yellow-blue-mesh-pink-demna-release-information-8.jpeg?q=90&w=1400&cbr=1&fit=max",
+                    "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2023%2F05%2Fbalenciaga-3xl-trainer-fluo-yellow-blue-mesh-pink-demna-release-information-010.jpg?q=90&w=1400&cbr=1&fit=max",
+                ],
+                name: "3XL sneaker Multicolor in pink",
+                prices: {
+                    excellent: "",
+                    good: "4600 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-black",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/10e6ed040d681a1d/Large-734731W2RG39010_F.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/2fee35f3a13400f7/Large-734731W2RG39010_J.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/64f8bf421e3ef3d5/Large-734731W2RG39010_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/24013a4472ea4e20/Large-734731W2RG39010_L.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/27365d94f31c6524/Large-734731W2RG39010_D.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/31cc284436a32d3e/Large-734731W2RG39010_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/e23c2f6b22243a/Large-734731W2RG39010_A.jpg?v=1",
+                ],
+                name: "3XL sneaker EXtreme Grafity in white/black",
+                prices: {
+                    excellent: "5000 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+        ];
+
+        updateContent("white-red", commonInfo, colorsData);
+        setColorButtons(colorsData, commonInfo);
+
+    </script>
+</body>
+</html>
