@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        header {
+            position: static;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="item">
+            <div class="galary"></div>
+
+            <div class="item-info">
+                <h2 class="oswald-medium">3xl Sneaker</h2>
+                <div class="colors"></div>
+                <div class="descr montserrat-light">
+                    <p>Price</p>
+                    <ul>
+                        <li>Excellent Quality - 5400 ₴</li>
+                        <li>Good Quality - 4600 ₴</li>
+                        <li>Middle Quality - 3800 ₴</li>
+                    </ul>
+                    <p>Sizes: 35-45</p>
+                    <p>Отправка в течении 12-14 рабочих дней</p>
+                    <a href="https://t.me/kirito_ls" class="view-all-btn">заказать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./../gallary.js"></script>
+    <script src="./../script.js"></script>
+    <script>
+        const commonInfo = {
+            prices: {
+                excellent: "5400 ₴",
+                good: "4600 ₴",
+                middle: "3800 ₴"
+            },
+            sizes: "35-45",
+            shipping: "Отправка в течении 12-14 рабочих дней"
+        };
+
+        const colorsData = [
+            {
+                colorName: "black",
+                images: [
+                    "./img/x-pander-black-1.jpg",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/106/950/330/original/1081530_08.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/106/950/312/original/1081530_03.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/106/950/317/original/1081530_06.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/106/950/314/original/1081530_04.jpg.jpeg?action=crop&width=600",
+                ],
+                name: "Balenciaga x-pander sneaker in black",
+                prices: {
+                    excellent: "6100 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white",
+                images: [
+                    "./img/x-pander-white-1.jpg",
+                    "https://www.ln-cc.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-09/default/dw4c8c9b8c/images/zoom/bal0248019_bei_01.jpg?sw=1984&sh=2728",
+                    "https://www.ln-cc.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-09/default/dwc10c2c7a/images/zoom/bal0248019_bei_02.jpg?sw=1984&sh=2728",
+                    "https://www.ln-cc.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-09/default/dw31257715/images/zoom/bal0248019_bei_03.jpg?sw=1984&sh=2728",
+                    "https://www.ln-cc.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-09/default/dw50b3c9c6/images/zoom/bal0248019_bei_04.jpg?sw=1984&sh=2728",
+                    "https://www.ln-cc.com/dw/image/v2/BGDG_PRD/on/demandware.static/-/Sites-09/default/dw5a32805c/images/zoom/bal0248019_bei_05.jpg?sw=1984&sh=2728",
+                ],
+                name: "Balenciaga x-pander sneaker in white",
+                prices: {
+                    excellent: "6100 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "grey",
+                images: [
+                    "./img/x-pander-grey-1.jpg",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/108/941/346/original/1171050_08.jpg.jpeg?action=crop&width=1000",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/108/941/324/original/1171050_03.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/108/941/334/original/1171050_06.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/108/941/326/original/1171050_04.jpg.jpeg?action=crop&width=600",
+                ],
+                name: "Balenciaga x-pander sneaker in grey",
+                prices: {
+                    excellent: "6100 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-black",
+                images: [
+                    "./img/x-pander-white_black-1.jpg",
+                    "https://editorialist.com/thumbnails/600/2022/12/023/044/524/23044524~9010_3.webp",
+                    "https://editorialist.com/thumbnails/600/2022/12/023/044/524/23044524~9010_2.webp",
+                    "https://editorialist.com/thumbnails/600/2022/12/023/044/524/23044524~9010_1.webp",
+                ],
+                name: "Balenciaga x-pander sneaker in white/black",
+                prices: {
+                    excellent: "6100 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-orange",
+                images: [
+                    "./img/x-pander-white_orange-1.jpg",
+                    "./img/x-pander-white_orange-2.jpg",
+                    "./img/x-pander-white_orange-3.jpg",
+                    "./img/x-pander-white_orange-4.jpg",
+                    "./img/x-pander-white_orange-5.jpg",
+                ],
+                name: "Balenciaga x-pander sneaker in white/orange",
+                prices: {
+                    excellent: "6100 ₴",
+                    good: "",
+                    middle: "4800 ₴"
+                }
+            },
+            {
+                colorName: "grey-blue",
+                images: [
+                    "./img/x-pander-grey_blue-1.jpg",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/103/681/725/original/740633_08.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/103/681/717/original/740633_03.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/103/681/723/original/740633_06.jpg.jpeg?action=crop&width=600",
+                    "https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/103/681/719/original/740633_04.jpg.jpeg?action=crop&width=600",
+                ],
+                name: "Balenciaga x-pander sneaker in grey/blue",
+                prices: {
+                    excellent: "6100 ₴",
+                    good: "",
+                    middle: "4800 ₴"
+                }
+            },
+            {
+                colorName: "white-pink",
+                images: [
+                    "./img/x-pander-white_pink-1.jpg",
+                    "https://i.ebayimg.com/images/g/l-4AAOSwwpxjrfxJ/s-l1600.webp",
+                    "https://i.ebayimg.com/images/g/snEAAOSw4TljrfxJ/s-l1600.webp",
+                    "https://i.ebayimg.com/images/g/2kUAAOSwb8RjrfxJ/s-l1600.webp",
+                ],
+                name: "Balenciaga x-pander sneaker in white/pink",
+                prices: {
+                    excellent: "6100 ₴",
+                    good: "",
+                    middle: "4800 ₴"
+                }
+            },
+            {
+                colorName: "yellow-black",
+                images: [
+                    "./img/x-pander-yellow_black-1.jpg",
+                    "https://cdn.lepodium.com/images/122/834/122834250-3.jpg",
+                    "https://cdn.lepodium.com/images/122/834/122834251-3.jpg",
+                    "https://cdn.lepodium.com/images/125/540/125540644-3.jpg",
+                ],
+                name: "Balenciaga x-pander sneaker in yellow/black",
+                prices: {
+                    excellent: "6100 ₴",
+                    good: "",
+                    middle: "4800 ₴"
+                }
+            },
+        ];
+
+        initializePage(colorsData, commonInfo);
+
+    </script>
+</body>
+</html>

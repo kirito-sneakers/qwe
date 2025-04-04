@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        header {
+            position: static;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="item">
+            <div class="galary"></div>
+
+            <div class="item-info">
+                <h2 class="oswald-medium">3xl Sneaker</h2>
+                <div class="colors"></div>
+                <div class="descr montserrat-light">
+                    <p>Price</p>
+                    <ul>
+                        <li>Excellent Quality - 5400 ₴</li>
+                        <li>Good Quality - 4600 ₴</li>
+                        <li>Middle Quality - 3800 ₴</li>
+                    </ul>
+                    <p>Sizes: 35-45</p>
+                    <p>Отправка в течении 12-14 рабочих дней</p>
+                    <a href="https://t.me/kirito_ls" class="view-all-btn">заказать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./../gallary.js"></script>
+    <script src="./../script.js"></script>
+    <script>
+        const commonInfo = {
+            prices: {
+                excellent: "5400 ₴",
+                good: "4600 ₴",
+                middle: "3800 ₴"
+            },
+            sizes: "35-46",
+            shipping: "Отправка в течении 12-14 рабочих дней"
+        };
+
+        const colorsData = [
+            {
+                colorName: "black",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/5bfd2f3a6a33b201/Large-804921WHIKE1000_F.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/153d202a1b34923b/Large-804921WHIKE1000_J.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/73b095f826a7d694/Large-804921WHIKE1000_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/581ef0ca80304a4/Large-804921WHIKE1000_L.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/2a94ed5fc0246cc1/Large-804921WHIKE1000_D.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/53598bf4b7b6bbac/Large-804921WHIKE1000_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/6d24beaf378d3ede/Large-804921WHIKE1000_A.jpg?v=1",
+                ],
+                name: "Balenciaga hike sneaker in black",
+                prices: {
+                    excellent: "5000 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "beige-orange",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/6c722f8913e47b23/Large-804921WHIKE2070_F.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/88d963b61463230/Large-804921WHIKE2070_J.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/553cbc6e67310d53/Large-804921WHIKE2070_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/11aa271101d9c9b4/Large-804921WHIKE2070_L.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/5d8ab1857f1234bf/Large-804921WHIKE2070_D.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/7f8cd0b04033b7b4/eCom-804921WHIKE2070_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/688e124a7f5b5231/Large-804921WHIKE2070_A.jpg?v=1",
+                ],
+                name: "Balenciaga hike sneaker in beige/orange",
+                prices: {
+                    excellent: "5000 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "red-black",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/f632d0f8c55de15/Large-804921WHIKE6010_F.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/294e169b737f894e/eCom-804921WHIKE6010_J.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/5f541bfdd150ca28/Large-804921WHIKE6010_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/7f811c96e80ba913/Large-804921WHIKE6010_L.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/7d922f490f1608f0/Large-804921WHIKE6010_D.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/70cd25785a9be0ce/Large-804921WHIKE6010_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/7c5a6507a642b222/Large-804921WHIKE6010_A.jpg?v=1",
+                ],
+                name: "Balenciaga hike sneaker in red/black",
+                prices: {
+                    excellent: "5000 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+        ];
+
+        initializePage(colorsData, commonInfo);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        header {
+            position: static;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="item">
+            <div class="galary"></div>
+
+            <div class="item-info">
+                <h2 class="oswald-medium">3xl Sneaker</h2>
+                <div class="colors"></div>
+                <div class="descr montserrat-light">
+                    <p>Price</p>
+                    <ul>
+                        <li>Excellent Quality - 5400 ₴</li>
+                        <li>Good Quality - 4600 ₴</li>
+                        <li>Middle Quality - 3800 ₴</li>
+                    </ul>
+                    <p>Sizes: 35-45</p>
+                    <p>Отправка в течении 12-14 рабочих дней</p>
+                    <a href="https://t.me/kirito_ls" class="view-all-btn">заказать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./../gallary.js"></script>
+    <script src="./../script.js"></script>
+    <script>
+        const commonInfo = {
+            prices: {
+                excellent: "5400 ₴",
+                good: "4600 ₴",
+                middle: "3800 ₴"
+            },
+            sizes: "35-46",
+            shipping: "Отправка в течении 12-14 рабочих дней"
+        };
+
+        const colorsData = [
+            {
+                colorName: "black",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/2e0ee84686216d11/Large-803681W3ST41000_F.jpg?v=6",
+                    "https://balenciaga.dam.kering.com/m/68bd5dd8b222dc56/Large-803681W3ST41000_J.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/32b4b86f13f88e1/Large-803681W3ST41000_I.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/7b5fdcbbbf067bb4/Large-803681W3ST41000_L.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/735e2687edcb74de/eCom-803681W3ST41000_D.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/2056f37a9fca84c4/Large-803681W3ST41000_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/6d0fe5bae6f2e559/Large-803681W3ST41000_A.jpg?v=2",
+                ],
+                name: "Balenciaga stapler sneaker in black",
+                prices: {
+                    excellent: "5200 ₴",
+                    good: "4800 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "beige",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/7ee51a00d6097a7b/Large-803681W3ST49191_F.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/535fa83caff26d40/Large-803681W3ST49191_J.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/39915e6e19853ebd/Large-803681W3ST49191_I.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/2887945400da6293/eCom-803681W3ST49191_L.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/39915e6e19853ebd/Large-803681W3ST49191_I.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/234885c3a67875ee/eCom-803681W3ST49191_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/5cb9d2b7baa4ef9b/Large-803681W3ST49191_A.jpg?v=2",
+                ],
+                name: "Balenciaga stapler sneaker in beige",
+                prices: {
+                    excellent: "5200 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "grey",
+                images: [
+                    "./img/stapler-grey-1.jpg",
+                    "https://cdn.4stand.com/huge/9e/1b/9e1b5c3df3e36b6e1584b54d40d073b406341f58.webp",
+                    "https://cdn.4stand.com/huge/09/9c/099c3910374e32cda75ff0cae681a5666172ae75.webp",
+                    "https://cdn.4stand.com/huge/6b/3d/6b3db47097dedc86683aab3a78194cb814ea6689.webp",
+                    "https://cdn.4stand.com/huge/b8/32/b832fda9e88a276785ad20623d226c181e98ff39.webp",
+                    "https://cdn.4stand.com/huge/5f/c3/5fc3dd3510d74066409029563e098839daf04c9e.webp",
+                    "https://cdn.4stand.com/huge/2b/65/2b65ec4fa0c685966bbb9be33e13434db8b9f6bf.webp",
+                ],
+                name: "Balenciaga stapler sneaker in grey",
+                prices: {
+                    excellent: "5200 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "pink-yellow",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/1aad72d936194d08/eCom-803681W3ST49571_F.jpg?v=6",
+                    "https://balenciaga.dam.kering.com/m/497a6dc58fb9744f/Large-803681W3ST49571_J.jpg?v=5",
+                    "https://balenciaga.dam.kering.com/m/3b40e26b0d0b47a5/Large-803681W3ST49571_I.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/3f695bd5f0494722/Large-803681W3ST49571_L.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/75fd16e6fea78e72/Large-803681W3ST49571_D.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/62c8ddd11fd585a4/Large-803681W3ST49571_E.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/198c3cb383562c45/Large-803681W3ST49571_A.jpg?v=4",
+                ],
+                name: "Balenciaga stapler sneaker in pink/yellow",
+                prices: {
+                    excellent: "5200 ₴",
+                    good: "4800 ₴",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/5d4848a5f455347f/Large-803682W3ST41457_F.jpg?v=6",
+                    "https://balenciaga.dam.kering.com/m/64f2240e4b897f8a/Large-803682W3ST41457_J.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/8f5395ba8f06481/Large-803682W3ST41457_I.jpg?v=4",
+                    "https://balenciaga.dam.kering.com/m/208b06c10e5c8d70/Large-803682W3ST41457_L.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/4f49e23f77dffee8/Large-803682W3ST41457_D.jpg?v=3",
+                    "https://balenciaga.dam.kering.com/m/7f1b685ea4b99cbd/Large-803682W3ST41457_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/1565ba7fefd524b7/Large-803682W3ST41457_A.jpg?v=2",
+                ],
+                name: "Balenciaga stapler sneaker colorful",
+                prices: {
+                    excellent: "5200 ₴",
+                    good: "4800 ₴",
+                    middle: ""
+                }
+            },
+        ];
+
+        initializePage(colorsData, commonInfo);
+
+    </script>
+</body>
+</html>

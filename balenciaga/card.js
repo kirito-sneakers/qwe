@@ -273,43 +273,72 @@ const balenciagaMainMenu = [
             "./img/triple-s-faded-blue-1.jpg",
             "./img/triple-s-faded-red-1.jpg",
         ],
-        colors: 3,
+        colors: 4,
         href: "./triple-s-faded.html",
+    },
+    {
+        title: 'balenciaga cargo',
+        images: [
+            "./img/cargo-white-1.jpg",
+            "./img/cargo-black-1.jpg",
+            "./img/cargo-white_grey-1.jpg",
+            "./img/cargo-grey_white-1.jpg",
+            "./img/cargo-white_yellow-1.jpg",
+            "./img/cargo-white_blue-1.jpg",
+            "./img/cargo-beige_red-1.jpg",
+            "./img/cargo-white_pink-1.jpg",
+            "./img/cargo-yellow_blue-1.jpg",
+        ],
+        colors: 9,
+        href: "./cargo.html",
+    },
+    {
+        title: 'balenciaga circuit',
+        images: [
+            "https://balenciaga.dam.kering.com/m/74a33619c016a3e8/Large-793944WFLGY1000_F.jpg?v=1",
+            "https://balenciaga.dam.kering.com/m/16c960c55f04497c/Large-793944WFLGC9000_F.jpg?v=1",
+            "https://balenciaga.dam.kering.com/m/2ec73fef5082a501/Large-793944WFLGY9100_F.jpg?v=1",
+            "https://balenciaga.dam.kering.com/m/77352996dd19cf4d/eCom-793944WFLGY1950_F.jpg?v=1",
+        ],
+        colors: 4,
+        href: "./circuit.html",
     },
     {
         title: 'balenciaga stapler',
         images: [
             "https://balenciaga.dam.kering.com/m/2e0ee84686216d11/Large-803681W3ST41000_F.jpg?v=6",
+            "https://balenciaga.dam.kering.com/m/7ee51a00d6097a7b/Large-803681W3ST49191_F.jpg?v=5",
+            "./img/stapler-grey-1.jpg",
             "https://balenciaga.dam.kering.com/m/1aad72d936194d08/eCom-803681W3ST49571_F.jpg?v=6",
+            "https://balenciaga.dam.kering.com/m/5d4848a5f455347f/Large-803682W3ST41457_F.jpg?v=6",
         ],
-        href: "https://google.com",
+        colors: 5,
+        href: "./stapler.html",
+    },
+    {
+        title: 'balenciaga x-pander',
+        images: [
+            "./img/x-pander-black-1.jpg",
+            "./img/x-pander-white-1.jpg",
+            "./img/x-pander-grey-1.jpg",
+            "./img/x-pander-white_black-1.jpg",
+            "./img/x-pander-white_orange-1.jpg",
+            "./img/x-pander-grey_blue-1.jpg",
+            "./img/x-pander-white_pink-1.jpg",
+            "./img/x-pander-yellow_black-1.jpg",
+        ],
+        colors: 8,
+        href: "./x-pander.html",
     },
     {
         title: 'balenciaga hike',
         images: [
             "https://balenciaga.dam.kering.com/m/5bfd2f3a6a33b201/Large-804921WHIKE1000_F.jpg?v=1",
             "https://balenciaga.dam.kering.com/m/6c722f8913e47b23/Large-804921WHIKE2070_F.jpg?v=2",
+            "https://balenciaga.dam.kering.com/m/f632d0f8c55de15/Large-804921WHIKE6010_F.jpg?v=2",
         ],
-        href: "https://google.com",
-    },
-    {
-        title: 'balenciaga circuit',
-        images: [
-            "https://balenciaga.dam.kering.com/m/74a33619c016a3e8/Large-793944WFLGY1000_F.jpg?v=1",
-            "https://balenciaga.dam.kering.com/m/2ec73fef5082a501/Large-793944WFLGY9100_F.jpg?v=1",
-        ],
-        href: "https://google.com",
-    },
-    {
-        title: 'balenciaga x-pander',
-        images: [
-            "https://balenciaga.dam.kering.com/m/3af9cb97f6786d10/Large-533882W09OM1000_F.jpg?v=5",
-            "https://balenciaga.dam.kering.com/m/3854d991a1d9606c/Large-524039W2FW19700_F.jpg?v=4",
-            "https://balenciaga.dam.kering.com/m/7b7c9495c7df7055/Large-542436W3AC48071_F.jpg?v=3",
-            "https://balenciaga.dam.kering.com/m/61e97b5971411bf7/Large-690494W3GN11000_F.jpg?v=3"
-
-        ],
-        href: "https://google.com",
+        colors: 3,
+        href: "./hike.html",
     },
 ];
 

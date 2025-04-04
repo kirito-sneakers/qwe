@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        header {
+            position: static;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="item">
+            <div class="galary"></div>
+
+            <div class="item-info">
+                <h2 class="oswald-medium">3xl Sneaker</h2>
+                <div class="colors"></div>
+                <div class="descr montserrat-light">
+                    <p>Price</p>
+                    <ul>
+                        <li>Excellent Quality - 5400 ₴</li>
+                        <li>Good Quality - 4600 ₴</li>
+                        <li>Middle Quality - 3800 ₴</li>
+                    </ul>
+                    <p>Sizes: 35-45</p>
+                    <p>Отправка в течении 12-14 рабочих дней</p>
+                    <a href="https://t.me/kirito_ls" class="view-all-btn">заказать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./../gallary.js"></script>
+    <script src="./../script.js"></script>
+    <script>
+        const commonInfo = {
+            prices: {
+                excellent: "5400 ₴",
+                good: "4600 ₴",
+                middle: "3800 ₴"
+            },
+            sizes: "35-46",
+            shipping: "Отправка в течении 12-14 рабочих дней"
+        };
+
+        const colorsData = [
+            {
+                colorName: "black",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/74a33619c016a3e8/Large-793944WFLGY1000_F.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/1847bb672914803d/Large-793944WFLGY1000_J.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/415e381b25be612/Large-793944WFLGY1000_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/23bb7744627ddd4f/Large-793944WFLGY1000_L.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/249d2167215db60c/Large-793944WFLGY1000_D.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/bd1870353a25f1b/Large-793944WFLGY1000_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/4f9a6693f702348a/Large-793944WFLGY1000_A.jpg?v=1",
+                ],
+                name: "Balenciaga Circuit sneaker in black",
+                prices: {
+                    excellent: "4600 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/16c960c55f04497c/Large-793944WFLGC9000_F.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/188bfff492c089d8/Large-793944WFLGC9000_J.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/6a6f2348f21fa8a1/Large-793944WFLGC9000_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/6b049ae94e1548fa/Large-793944WFLGC9000_L.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/647cbe435da1712c/Large-793944WFLGC9000_D.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/7ab87b02e3b83888/Large-793944WFLGC9000_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/4e09eadf0f47daa6/Large-793944WFLGC9000_A.jpg?v=1",
+                ],
+                name: "Balenciaga Circuit sneaker in white",
+                prices: {
+                    excellent: "4600 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-silver",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/2ec73fef5082a501/Large-793944WFLGY9100_F.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/d1a1e8127814948/Large-793944WFLGY9100_J.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/12637d2af9a798dc/Large-793944WFLGY9100_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/1249bae8594a1579/Large-793944WFLGY9100_L.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/21077d8fc6bf6627/Large-793944WFLGY9100_D.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/39036e4391952654/Large-793944WFLGY9100_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/5cbf056fcc238d07/Large-793944WFLGY9100_A.jpg?v=1",
+                ],
+                name: "Balenciaga Circuit sneaker in white/silver",
+                prices: {
+                    excellent: "4600 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "white-pink",
+                images: [
+                    "https://balenciaga.dam.kering.com/m/77352996dd19cf4d/eCom-793944WFLGY1950_F.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/39355606a59711ac/Large-793944WFLGY1950_J.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/70bb8674fd865639/Large-793944WFLGY1950_I.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/6118b194e5d6a479/Large-793944WFLGY1950_L.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/1eb0a579477200e/Large-793944WFLGY1950_D.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/5133b3369961b825/Large-793944WFLGY1950_E.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/19d1a995dc7c3dbf/Large-793944WFLGY1950_A.jpg?v=2",
+                ],
+                name: "Balenciaga Circuit sneaker in white/pink",
+                prices: {
+                    excellent: "4600 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+        ];
+
+        initializePage(colorsData, commonInfo);
+
+    </script>
+</body>
+</html>

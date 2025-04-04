@@ -85,7 +85,7 @@ body, html {
 }
 
 .white-grey {
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(144, 144, 144);
     &::before {
         content: '';
         position: absolute;
@@ -333,6 +333,21 @@ body, html {
     }
 }
 
+.grey-white {
+    background-color: rgb(255, 255, 255);
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        background-color: rgb(144, 144, 144);
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+}
+
 .grey-blue {
     background-color: rgb(119, 221, 236);
     &::before {
@@ -398,6 +413,21 @@ body, html {
     } 
 }
 
+.beige-orange {
+    background-color: orange;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        background-color: rgb(234, 234, 213);
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    } 
+}
+
 .beige-red {
     background-color: red;
     &::before {
@@ -417,9 +447,39 @@ body, html {
     background-color: rgb(255, 0, 0);
 }
 
+.red-black {
+    background-color: black;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        background-color: red;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    } 
+}
+
 
 .pink {
     background-color: pink;
+}
+
+.pink-yellow {
+    background-color: yellow;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        background-color: pink;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    } 
 }
 
 .taupe {
