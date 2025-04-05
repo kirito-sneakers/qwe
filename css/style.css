@@ -1096,10 +1096,9 @@ footer {
 @media (pointer: coarse) {
     .mein-menu {
         .list-item {
+            z-index: 0;
             .swiper {
-                .swiper-pagination {
-                    opacity: 1;
-                }
+                z-index: 97;
             }
         }
     }
