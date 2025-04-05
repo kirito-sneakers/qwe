@@ -657,8 +657,8 @@ header {
     }
     .saved-icon {
         position: absolute;
-        width: 40px;
-        right: 40px;
+        width: 60px;
+        right: 60px;
         img {
             width: inherit;
         }
