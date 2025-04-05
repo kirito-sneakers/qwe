@@ -614,7 +614,7 @@ main {
     border: none;
     cursor: pointer;
     rotate: 0;
-    transform: rotate(0);
+    transform: rotate(-45deg);
 }
 
 .montserrat-light {
