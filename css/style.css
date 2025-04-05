@@ -785,14 +785,15 @@ main {
               }
         }
         .delete-card {
-            width: 25px;
+            width: 33px;
             background: none;
             border: 0;
             position: absolute;
-            right: 20px;
-            top: 20px;
+            right: 10px;
+            top: 10px;
             z-index: 98;
             cursor: pointer;
+            padding: 8px;
         }
         .swiper {
             --swiper-navigation-size: 20px;
