@@ -845,18 +845,6 @@ main {
             font-size: 15px;
             bottom: 90px;
         }
-        &:hover {
-            .swiper  {
-                .swiper-button-next, .swiper-button-prev, .swiper-pagination {
-                    transition: 0.3s;
-                    opacity: 1;
-                }
-            }
-            h3 {
-                transition: 0.3s;
-                opacity: 0;
-            }
-        }
     }
 }
 

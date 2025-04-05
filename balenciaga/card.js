@@ -467,13 +467,6 @@ class MainMenu {
             },
             allowClick: true, // Позволяет активировать ссылки внутри слайдов
         });
-
-        // Обработчик клика на карточку, чтобы переходить на страницу
-        element.addEventListener('click', (e) => {
-            if (e.target.closest('.swiper-slide') || e.target.closest('.list-item')) {
-                window.location.href = this.href;  // Переход на страницу при клике на карточку
-            }
-        });
     }
 }
 
