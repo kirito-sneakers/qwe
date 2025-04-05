@@ -389,18 +389,18 @@ class MainMenu {
         const element = document.createElement('article');
         element.classList.add('list-item', 'secondary-list');
 
-        // Генерация слайдов
-        const slides = this.images.map(imgSrc => {
-            return `<a href="${this.href}" class="swiper-slide"><img src="${imgSrc}" alt="${this.title}" /></a>`;
-        }).join('');
+        const slides = this.images.map(imgSrc =>
+            `<a href="${this.href}" class="swiper-slide"><img src="${imgSrc}" alt="${this.title}" /></a>`
+        ).join('');
 
-        // Вставка HTML-разметки в элемент
         element.innerHTML = `
             <div class="swiper">
                 <div class="swiper-wrapper">
                     ${slides}
                 </div>
                 <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
             <h3 class="oswald-medium">${this.title}</h3>
             <p class="montserrat-light">${this.colors} colors</p>
@@ -419,56 +419,52 @@ class MainMenu {
 
         this.parent.append(element);
 
+        // Чекбокс
         const checkbox = element.querySelector('.save-card-checkbox');
-
-        // Проверка, была ли карточка ранее сохранена
         const savedCards = JSON.parse(localStorage.getItem('savedCards')) || [];
         const isCardSaved = savedCards.some(card => card.title === this.title);
-
-        // Если карточка сохранена, устанавливаем чекбокс в состояние "отмечено"
         checkbox.checked = isCardSaved;
 
-        // Обработчик для чекбокса
         checkbox.addEventListener('change', (event) => {
             const cardData = {
                 title: this.title,
                 images: this.images.map(img => {
                     return img.startsWith('./') || img.startsWith('http') ? img : `./balenciaga/img/${img}`;
                 }),
-                href: this.href.replace(/^\./, './balenciaga'),  // Заменяем первую точку на './balenciaga'
+                href: this.href.startsWith('./') || this.href.startsWith('http') ? this.href : `./balenciaga/${this.href}`,
                 colors: this.colors
             };
 
             let savedCards = JSON.parse(localStorage.getItem('savedCards')) || [];
 
             if (event.target.checked) {
-                // Если чекбокс отмечен, добавляем карточку в localStorage
                 savedCards.push(cardData);
             } else {
-                // Если чекбокс снят, удаляем карточку из localStorage
                 savedCards = savedCards.filter(card => card.title !== this.title);
             }
 
             localStorage.setItem('savedCards', JSON.stringify(savedCards));
         });
 
-        // Инициализация Swiper
-        const swiper = new Swiper(element.querySelector('.swiper'), {
+        // Swiper
+        new Swiper(element.querySelector('.swiper'), {
             direction: 'horizontal',
             loop: true,
             pagination: {
                 el: element.querySelector('.swiper-pagination'),
-                clickable: true,
+                clickable: true
             },
-            allowTouchMove: true, // Включаем возможность свайпа
-            navigation: false, // Отключаем кнопки навигации
-            autoplay: false,  // Отключаем автопрокрутку (если нужно)
-            simulateTouch: true, // Включаем возможность свайпа для мобильных устройств
+            navigation: {
+                nextEl: element.querySelector('.swiper-button-next'),
+                prevEl: element.querySelector('.swiper-button-prev'),
+            },
+            allowTouchMove: true,
+            simulateTouch: true,
         });
     }
 }
 
-// Предположим, что balenciagaMainMenu — это массив объектов с данными карточек
+// Инициализация карточек
 balenciagaMainMenu.forEach(item => {
     new MainMenu(item.title, item.images, item.href, item.parent, item.colors).render();
 });
