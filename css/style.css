@@ -1111,6 +1111,9 @@ footer {
                 .swiper-button-next, .swiper-button-prev {
                     display: none;
                 }
+                &:hover ~ h3, .swiper:hover ~ p {
+                    opacity: 1;
+                }
             }
         }
     }
