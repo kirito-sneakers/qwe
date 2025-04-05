@@ -1099,6 +1099,9 @@ footer {
                 .swiper-pagination {
                     opacity: 1;
                 }
+                .swiper-button-next, .swiper-button-prev {
+                    opacity: 0;
+                }
             }
         }
     }
