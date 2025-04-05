@@ -146,7 +146,7 @@ class MainMenu {
                 <div class="swiper-button-next"></div>
             </div>
             <h3 class="oswald-medium">${this.title}</h3>
-            <p class="montserrat-light">${this.models} models</p
+            <p class="montserrat-light">${this.models} categories</p
         `;
 
         this.parent.append(element);

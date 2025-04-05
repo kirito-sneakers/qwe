@@ -606,10 +606,13 @@ main {
 }
 
 .go-back-btn {
-    width: 50px;
+    width: 100px;
     position: absolute;
     top: 20px;
     left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .montserrat-light {
@@ -634,16 +637,18 @@ main {
 }
 
 header {
-    position: relative;
+    position: fixed;
+    width: 100%;
     background-color: #fff;
     top: 0px;
     display: flex;
     height: fit-content;
     border-bottom: 1px solid #111;
-    z-index: 9999;
     padding: 20px;
     align-items: center;
     justify-content: center;
+    z-index: 99999;
+    transition: transform 0.3s ease;
     .logo-icon {
         width: 50px;
         img {
@@ -660,10 +665,15 @@ header {
     }
 }
 
+header.hide {
+    transform: translateY(-100%);
+}
+
 section {
     overflow-x: hidden;
 }
 main {
+    padding-top: 80px;
     position: relative;
 }
 
