@@ -388,11 +388,11 @@ class MainMenu {
     render() {
         const element = document.createElement('article');
         element.classList.add('list-item', 'secondary-list');
-
+    
         const slides = this.images.map(imgSrc => 
             `<a href=${this.href} class="swiper-slide"><img src="${imgSrc}" alt="${this.title}" /></a>`
         ).join('');
-
+    
         element.innerHTML = `
             <div class="swiper">
                 <div class="swiper-wrapper">
@@ -403,11 +403,71 @@ class MainMenu {
                 <div class="swiper-button-next"></div>
             </div>
             <h3 class="oswald-medium">${this.title}</h3>
-            <p class="montserrat-light">${this.colors} colors</p
+            <p class="montserrat-light">${this.colors} colors</p>
+            <div class="save-card">
+                <label class="container">
+                    <input type="checkbox" class="save-card-checkbox" />
+                    <svg
+                        class="save-regular"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 384 512"
+                    >
+                        <path
+                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
+                        ></path>
+                    </svg>
+                    <svg
+                        class="save-solid"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 384 512"
+                    >
+                        <path
+                        d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+                        ></path>
+                    </svg>
+                </label>
+            <div>
         `;
-
+    
         this.parent.append(element);
 
+        const checkbox = element.querySelector('.save-card-checkbox');
+        
+        // Проверка, была ли карточка ранее сохранена
+        const savedCards = JSON.parse(localStorage.getItem('savedCards')) || [];
+        const isCardSaved = savedCards.some(card => card.title === this.title);
+
+        // Если карточка сохранена, устанавливаем чекбокс в состояние "отмечено"
+        checkbox.checked = isCardSaved;
+
+        // Обработчик для чекбокса
+        checkbox.addEventListener('change', (event) => {
+            const cardData = {
+                title: this.title,
+                images: this.images.map(img => {
+                    return img.startsWith('./') || img.startsWith('http') ? img : `./balenciaga/img/${img}`;
+                }),
+                href: this.href.replace(/^\./, './balenciaga'),  // заменяем первую точку на './balenciaga'
+                colors: this.colors
+            };
+            
+                             
+
+            let savedCards = JSON.parse(localStorage.getItem('savedCards')) || [];
+
+            if (event.target.checked) {
+                // Если чекбокс отмечен, добавляем карточку в localStorage
+                savedCards.push(cardData);
+                localStorage.setItem('savedCards', JSON.stringify(savedCards));
+            } else {
+                // Если чекбокс снят, удаляем карточку из localStorage
+                savedCards = savedCards.filter(card => card.title !== this.title);
+                localStorage.setItem('savedCards', JSON.stringify(savedCards));
+            }
+        });
+    
         new Swiper(element.querySelector('.swiper'), {
             direction: 'horizontal',
             loop: true,
@@ -421,6 +481,8 @@ class MainMenu {
         });
     }
 }
+
+
 
 balenciagaMainMenu.forEach(item => {
     new MainMenu(item.title, item.images, item.href, item.parent, item.colors).render();

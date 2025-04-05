@@ -2,8 +2,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const header = document.createElement('header');
     header.innerHTML = `
-        <a href="./../index.html">
+        <a href="./../index.html" class="logo-icon">
             <img src="./../img/logotype.png" alt="Logo">
+        </a>
+        <a href="./../saved.html" class="saved-icon">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M0 0h48v48H0z" fill="none"></path> <g id="Shopicon"> <path d="M14,4c-2.2,0-4,1.8-4,4v36l14-8l14,8V8c0-2.2-1.8-4-4-4H14z"></path> </g> </g></svg>
         </a>
     `;
     document.querySelector('body').prepend(header);
@@ -12,9 +15,9 @@ window.addEventListener('DOMContentLoaded', () => {
     footer.innerHTML = `
         <div class="footer-logo"><a href="./../index.html"><img src="./../img/logotype.png" alt=""></a></div>
         <div class="footer-info">
+            <a href="https://t.me/kirito_l" class="oswald-light">написать нам</a>
             <a href="./../info.html" class="oswald-light">про нас</a>
-            <a href="./../info.html" class="oswald-light">faq</a>
-            <a href="./../info.html" class="oswald-light">купить обувь</a>
+            <a href="./../index.html" class="oswald-light">заказать обувь</a>
         </div>
         <div class="footer-contacts">
             <a href="https://www.instagram.com/kirito_sneakers/">
