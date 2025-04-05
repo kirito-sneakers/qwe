@@ -1093,6 +1093,18 @@ footer {
     text-align: center;
 }
 
+@media (pointer: coarse) {
+    .mein-menu {
+        .list-item {
+            .swiper {
+                .swiper-pagination {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1250px) {
     .mein-menu {
         grid-template-columns: repeat(3, minmax(0px, 1fr));

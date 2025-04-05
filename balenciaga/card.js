@@ -385,7 +385,6 @@ class MainMenu {
         this.colors = colors;
     }
 
-    // Метод для рендеринга карточки
     render() {
         const element = document.createElement('article');
         element.classList.add('list-item', 'secondary-list');
@@ -456,7 +455,7 @@ class MainMenu {
         });
 
         // Инициализация Swiper
-        new Swiper(element.querySelector('.swiper'), {
+        const swiper = new Swiper(element.querySelector('.swiper'), {
             direction: 'horizontal',
             loop: true,
             pagination: {
@@ -466,6 +465,7 @@ class MainMenu {
                 nextEl: element.querySelector('.swiper-button-next'),
                 prevEl: element.querySelector('.swiper-button-prev'),
             },
+            allowClick: true, // Позволяет активировать ссылки внутри слайдов
         });
     }
 }
