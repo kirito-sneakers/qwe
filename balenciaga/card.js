@@ -401,8 +401,6 @@ class MainMenu {
                     ${slides}
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
             <h3 class="oswald-medium">${this.title}</h3>
             <p class="montserrat-light">${this.colors} colors</p>
@@ -460,12 +458,12 @@ class MainMenu {
             loop: true,
             pagination: {
                 el: element.querySelector('.swiper-pagination'),
+                clickable: true,
             },
-            navigation: {
-                nextEl: element.querySelector('.swiper-button-next'),
-                prevEl: element.querySelector('.swiper-button-prev'),
-            },
-            allowClick: true, // Позволяет активировать ссылки внутри слайдов
+            allowTouchMove: true, // Включаем возможность свайпа
+            navigation: false, // Отключаем кнопки навигации
+            autoplay: false,  // Отключаем автопрокрутку (если нужно)
+            simulateTouch: true, // Включаем возможность свайпа для мобильных устройств
         });
     }
 }
