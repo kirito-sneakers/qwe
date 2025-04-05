@@ -431,7 +431,7 @@ class MainMenu {
                 images: this.images.map(img => {
                     return img.startsWith('./') || img.startsWith('http') ? img : `./balenciaga/img/${img}`;
                 }),
-                href: this.href.startsWith('./') || this.href.startsWith('http') ? this.href : `./balenciaga/${this.href}`,
+                href: this.href.replace('./', './balenciaga/'),
                 colors: this.colors
             };
 
