@@ -657,8 +657,8 @@ header {
     }
     .saved-icon {
         position: absolute;
-        width: 60px;
-        right: 60px;
+        width: 40px;
+        right: 40px;
         img {
             width: inherit;
         }
@@ -734,7 +734,7 @@ main {
                 align-items: center;
                 position: relative;
                 cursor: pointer;
-                font-size: 30px;
+                font-size: 40px;
                 user-select: none;
                 fill: var(--color);
                 height: 20px;
