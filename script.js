@@ -9,20 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
             <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M0 0h48v48H0z" fill="none"></path> <g id="Shopicon"> <path d="M14,4c-2.2,0-4,1.8-4,4v36l14-8l14,8V8c0-2.2-1.8-4-4-4H14z"></path> </g> </g></svg>
         </a>
     `;
-    let lastScroll = 0;
-    window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset;
-
-  if (currentScroll > lastScroll && currentScroll > 100) {
-    // Скролл вниз
-    header.classList.add('hide');
-  } else {
-    // Скролл вверх
-    header.classList.remove('hide');
-  }
-
-  lastScroll = currentScroll;
-});
+    
     document.querySelector('body').prepend(header);
 
     const footer = document.createElement('footer');
