@@ -613,6 +613,8 @@ main {
     background: none;
     border: none;
     cursor: pointer;
+    rotate: 0;
+    transform: rotate(0);
 }
 
 .montserrat-light {
@@ -1024,9 +1026,12 @@ footer {
             &:first-child {
                 width: 100%;
                 aspect-ratio: 1 / 1;
+                position: relative;
                 img {
                     width: 100%;
-                    height: fit-content;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
                 }
             }
         }
