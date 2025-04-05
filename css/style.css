@@ -829,9 +829,6 @@ main {
                     opacity: 1;
                 }
             }
-            &:hover ~ h3, .swiper:hover ~ p {
-              opacity: 0;
-            }
         }
         h3 {
             position: absolute;
@@ -1098,6 +1095,18 @@ footer {
     }
 }
 
+@media (hover: hover) and (pointer: fine) {
+    .mein-menu {
+        .list-item {
+            .swiper {
+                &:hover ~ h3, .swiper:hover ~ p {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
 @media (pointer: coarse) {
     .mein-menu {
         .list-item {
@@ -1110,9 +1119,6 @@ footer {
                 }
                 .swiper-button-next, .swiper-button-prev {
                     display: none;
-                }
-                &:hover ~ h3, .swiper:hover ~ p {
-                    opacity: 1;
                 }
             }
         }
