@@ -820,6 +820,15 @@ main {
             }
             .swiper-pagination {
                 opacity: 0;
+                bottom: 20px;
+            }
+            &:hover {
+                .swiper-pagination {
+                    opacity: 1;
+                }
+                .swiper-button-next, .swiper-button-prev {
+                    opacity: 1;
+                }
             }
         }
         h3 {
@@ -1087,6 +1096,9 @@ footer {
             z-index: 0;
             .swiper {
                 z-index: 97;
+                .swiper-pagination {
+                    opacity: 1;
+                }
             }
         }
     }
