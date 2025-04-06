@@ -724,8 +724,8 @@ main {
         aspect-ratio: 1 / 1.35;
         .save-card {
             position: absolute;
-            right: 5px;
-            top: 15px;
+            right: 0px;
+            top: 0px;
             z-index: 98;
             .container {
                 --color: #000000;
@@ -736,8 +736,8 @@ main {
                 cursor: pointer;
                 user-select: none;
                 fill: var(--color);
-                width: 50px;
-                height: 40px;
+                width: 70px;
+                height: 70px;
               }
               
               .container .save-regular {
