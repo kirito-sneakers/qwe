@@ -962,6 +962,8 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 50px;
+        list-style: none;
+        padding-left: 0;
         li {
             h2 {
                 font-size: 30px;
@@ -1282,7 +1284,7 @@ footer {
     }
     .about-us {
         h1 {
-            font-size: 35px;
+            font-size: 30px;
         }
         ol {
             gap: 40px;
