@@ -1325,14 +1325,6 @@ footer {
             aspect-ratio: 1 / 1.9;
             h3 {
                 font-size: 13px;
-                
-            }
-            .save-card {
-                top: 10px;
-                right: 20px;
-                .container {
-                    font-size: 20px;
-                }
             }
         }
     }
