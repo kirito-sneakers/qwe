@@ -734,7 +734,6 @@ main {
                 align-items: center;
                 position: relative;
                 cursor: pointer;
-                font-size: 30px;
                 user-select: none;
                 fill: var(--color);
                 width: 50px;
