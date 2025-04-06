@@ -744,6 +744,7 @@ main {
                 position: absolute;
                 animation: keyframes-fill 0.5s;
                 transform-origin: top;
+                height: 30px;
               }
               
               .container .save-solid {
@@ -751,6 +752,7 @@ main {
                 animation: keyframes-fill 0.5s;
                 display: none;
                 transform-origin: top;
+                height: 30px;
               }
               
               /* ------ On check event ------ */
@@ -1317,6 +1319,26 @@ footer {
             }
         }
     }
+    .mein-menu {
+        .list-item {
+            .save-card {
+                .container .save-regular {
+                    position: absolute;
+                    animation: keyframes-fill 0.5s;
+                    transform-origin: top;
+                    height: 25px;
+                  }
+                  
+                  .container .save-solid {
+                    position: absolute;
+                    animation: keyframes-fill 0.5s;
+                    display: none;
+                    transform-origin: top;
+                    height: 25px;
+                  }
+            }
+        }
+    }
 }
 
 @media (max-width: 375px) {
@@ -1325,6 +1347,7 @@ footer {
             aspect-ratio: 1 / 1.9;
             h3 {
                 font-size: 13px;
+                
             }
         }
     }
