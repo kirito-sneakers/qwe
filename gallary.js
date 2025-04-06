@@ -76,10 +76,6 @@ function setColorButtons(colorsData, commonInfo) {
     colorButtons.forEach((button) => {
         button.addEventListener("click", () => {
             updateContent(button.classList[0], commonInfo, colorsData);  // Класс кнопки соответствует названию цвета
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // для плавной прокрутки
-              });
         });
     });
 }
