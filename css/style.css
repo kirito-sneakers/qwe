@@ -724,7 +724,7 @@ main {
         aspect-ratio: 1 / 1.35;
         .save-card {
             position: absolute;
-            right: 10px;
+            right: 5px;
             top: 15px;
             z-index: 98;
             .container {
