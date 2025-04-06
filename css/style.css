@@ -660,8 +660,8 @@ header {
         position: absolute;
         width: 40px;
         right: 40px;
-        img {
-            width: inherit;
+        svg path {
+            height: inherit;
         }
     }
 }
@@ -1297,6 +1297,9 @@ footer {
                 }
             }
         }
+    }
+    .go-back-btn {
+        width: 55px;
     }
 }
 
