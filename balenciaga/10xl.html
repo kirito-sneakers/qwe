@@ -33,7 +33,7 @@
                 <div class="descr montserrat-light">
                     <p>Price</p>
                     <ul>
-                        <li>Excellent Quality - 5400 ₴</li>
+                        <li>Excellent Quality - 5300 ₴</li>
                         <li>Good Quality - 4600 ₴</li>
                         <li>Middle Quality - 3800 ₴</li>
                     </ul>
@@ -51,15 +51,30 @@
     <script>
         const commonInfo = {
             prices: {
-                excellent: "5400 ₴",
+                excellent: "5300 ₴",
                 good: "4600 ₴",
                 middle: "3800 ₴"
             },
-            sizes: "35-45",
+            sizes: "35-46",
             shipping: "Отправка в течении 12-14 рабочих дней"
         };
 
         const colorsData = [
+            {
+                colorName: "white",
+                images: [
+                    "./img/10xl-white-1.jpg",
+                    "https://cdn-images.farfetch-contents.com/23/82/37/58/23823758_54366022_1000.jpg",
+                    "https://cdn-images.farfetch-contents.com/23/82/37/58/23823758_54366041_1000.jpg",
+                    "https://cdn-images.farfetch-contents.com/23/82/37/58/23823758_54366027_1000.jpg",
+                ],
+                name: "Balenciaga 10xl sneaker in white",
+                prices: {
+                    excellent: "5300 ₴",
+                    good: "4900 ₴",
+                    middle: ""
+                }
+            },
             {
                 colorName: "black",
                 images: [
@@ -73,23 +88,8 @@
                 ],
                 name: "Balenciaga 10xl sneaker in black",
                 prices: {
-                    excellent: "5400 ₴",
-                    good: "5000 ₴",
-                    middle: ""
-                }
-            },
-            {
-                colorName: "white",
-                images: [
-                    "./img/10xl-white-1.jpg",
-                    "https://cdn-images.farfetch-contents.com/23/82/37/58/23823758_54366022_1000.jpg",
-                    "https://cdn-images.farfetch-contents.com/23/82/37/58/23823758_54366041_1000.jpg",
-                    "https://cdn-images.farfetch-contents.com/23/82/37/58/23823758_54366027_1000.jpg",
-                ],
-                name: "Balenciaga 10xl sneaker in white/orange",
-                prices: {
-                    excellent: "5400 ₴",
-                    good: "5000 ₴",
+                    excellent: "5300 ₴",
+                    good: "4900 ₴",
                     middle: ""
                 }
             },
@@ -102,10 +102,10 @@
                     "https://i.ebayimg.com/images/g/FBwAAeSwFIRnomGz/s-l960.webp",
                     "https://i.ebayimg.com/images/g/KOsAAeSwJDBnomGz/s-l960.webp",
                 ],
-                name: "Balenciaga 10xl sneaker in black",
+                name: "Balenciaga 10xl sneaker in white/orange",
                 prices: {
-                    excellent: "5400 ₴",
-                    good: "5000 ₴",
+                    excellent: "5300 ₴",
+                    good: "4900 ₴",
                     middle: ""
                 }
             },
@@ -119,14 +119,15 @@
                 ],
                 name: "Balenciaga 10xl sneaker in grey/pink",
                 prices: {
-                    excellent: "5400 ₴",
-                    good: "5000 ₴",
+                    excellent: "5300 ₴",
+                    good: "4900 ₴",
                     middle: ""
                 }
             },
         ];
 
-        initializePage(colorsData, commonInfo);
+        updateContent("white", commonInfo, colorsData);
+        setColorButtons(colorsData, commonInfo);
 
     </script>
 </body>

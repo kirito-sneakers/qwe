@@ -92,6 +92,21 @@ main {
     }
 }
 
+.white-black1 {
+    background-color: black;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+}
+
 .white-grey {
     background-color: rgb(144, 144, 144);
     &::before {
@@ -107,19 +122,8 @@ main {
     }
 }
 
-.white-silver {
+.silver {
     background-color: rgb(218, 218, 218);
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 50%;
-        background-color: rgb(255, 255, 255);
-        border-top-left-radius: 2px;
-        border-bottom-left-radius: 2px;
-    }
 }
 
 .white-beige {
@@ -137,7 +141,7 @@ main {
     }
 }
 
-.white-grown {
+.white-brown {
     background-color: rgb(98, 54, 4);
     &::before {
         content: '';

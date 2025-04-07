@@ -66,7 +66,7 @@
                 ],
                 name: "Balenciaga cargo sneaker in white",
                 prices: {
-                    excellent: "5200 ₴",
+                    excellent: "5300 ₴",
                     good: "",
                     middle: ""
                 }
@@ -81,7 +81,7 @@
                 ],
                 name: "Balenciaga cargo sneaker in black",
                 prices: {
-                    excellent: "5200 ₴",
+                    excellent: "5300 ₴",
                     good: "",
                     middle: ""
                 }
@@ -98,7 +98,7 @@
                 ],
                 name: "Balenciaga cargo sneaker in white/grey",
                 prices: {
-                    excellent: "5200 ₴",
+                    excellent: "5300 ₴",
                     good: "",
                     middle: ""
                 }
@@ -115,7 +115,7 @@
                 ],
                 name: "Balenciaga cargo sneaker in grey/white",
                 prices: {
-                    excellent: "5200 ₴",
+                    excellent: "5300 ₴",
                     good: "",
                     middle: ""
                 }
@@ -131,7 +131,7 @@
                 ],
                 name: "Balenciaga cargo sneaker in white/yellow",
                 prices: {
-                    excellent: "5200 ₴",
+                    excellent: "5300 ₴",
                     good: "",
                     middle: ""
                 }
@@ -148,24 +148,7 @@
                 ],
                 name: "Balenciaga cargo sneaker in white/blue",
                 prices: {
-                    excellent: "5200 ₴",
-                    good: "",
-                    middle: ""
-                }
-            },
-            {
-                colorName: "beige-red",
-                images: [
-                    "./img/cargo-beige_red-1.jpg",
-                    "./img/cargo-beige_red-2.jpg",
-                    "./img/cargo-beige_red-3.jpg",
-                    "./img/cargo-beige_red-4.jpg",
-                    "./img/cargo-beige_red-5.jpg",
-                    "./img/cargo-beige_red-6.jpg",
-                ],
-                name: "Balenciaga cargo sneaker in beige/red",
-                prices: {
-                    excellent: "5200 ₴",
+                    excellent: "5300 ₴",
                     good: "",
                     middle: ""
                 }
@@ -183,7 +166,24 @@
                 ],
                 name: "Balenciaga cargo sneaker in white/pink",
                 prices: {
-                    excellent: "5200 ₴",
+                    excellent: "5300 ₴",
+                    good: "",
+                    middle: ""
+                }
+            },
+            {
+                colorName: "beige-red",
+                images: [
+                    "./img/cargo-beige_red-1.jpg",
+                    "./img/cargo-beige_red-2.jpg",
+                    "./img/cargo-beige_red-3.jpg",
+                    "./img/cargo-beige_red-4.jpg",
+                    "./img/cargo-beige_red-5.jpg",
+                    "./img/cargo-beige_red-6.jpg",
+                ],
+                name: "Balenciaga cargo sneaker in beige/red",
+                prices: {
+                    excellent: "5300 ₴",
                     good: "",
                     middle: ""
                 }
@@ -199,14 +199,15 @@
                 ],
                 name: "Balenciaga cargo sneaker in yellow/blue",
                 prices: {
-                    excellent: "5200 ₴",
+                    excellent: "5300 ₴",
                     good: "",
                     middle: ""
                 }
             },
         ];
 
-        initializePage(colorsData, commonInfo);
+        updateContent("white", commonInfo, colorsData);
+        setColorButtons(colorsData, commonInfo);
 
     </script>
 </body>

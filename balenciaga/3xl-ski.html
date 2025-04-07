@@ -61,16 +61,16 @@
 
         const colorsData = [
             {
-                colorName: "black",
+                colorName: "white",
                 images: [
-                    "https://balenciaga.dam.kering.com/m/472b885ecee44197/eCom-766034W3XR21000_F.jpg?v=1",
-                    "https://balenciaga.dam.kering.com/m/2debb2271e44388c/Medium-766034W3XR21000_J.jpg?v=2",
-                    "https://balenciaga.dam.kering.com/m/2debb2271e44388c/Medium-766034W3XR21000_J.jpg?v=2",
-                    "https://balenciaga.dam.kering.com/m/2be6d103f05dc326/Medium-766034W3XR21000_E.jpg?v=1",
-                    "https://balenciaga.dam.kering.com/m/46de148d27c536ad/Medium-766034W3XR21000_A.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/3bfa45de6b09a324/Medium-766034W3XR39710_F.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/5742e529c3b63c8d/Medium-766034W3XR39710_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/2b64aa3d8fae754c/Medium-766034W3XR39710_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/37991d914119414f/Medium-766033W3XR39710_D.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/12914b1498edbbfc/Medium-766033W3XR39710_A.jpg?v=1",
                     "./img/3xl-ski-accessory.jpg",
                 ],
-                name: "Balenciaga 3XL Ski sneaker in black",
+                name: "Balenciaga 3xl ski sneaker in white",
                 prices: {
                     excellent: "5400 ₴",
                     good: "",
@@ -78,16 +78,16 @@
                 }
             },
             {
-                colorName: "white",
+                colorName: "black",
                 images: [
-                    "https://balenciaga.dam.kering.com/m/3bfa45de6b09a324/Medium-766034W3XR39710_F.jpg?v=1",
-                    "https://balenciaga.dam.kering.com/m/5742e529c3b63c8d/Medium-766034W3XR39710_E.jpg?v=1",
-                    "https://balenciaga.dam.kering.com/m/37991d914119414f/Medium-766033W3XR39710_D.jpg?v=1",
-                    "https://balenciaga.dam.kering.com/m/2b64aa3d8fae754c/Medium-766034W3XR39710_I.jpg?v=1",
-                    "https://balenciaga.dam.kering.com/m/12914b1498edbbfc/Medium-766033W3XR39710_A.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/472b885ecee44197/eCom-766034W3XR21000_F.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/2be6d103f05dc326/Medium-766034W3XR21000_E.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/1aa73cef64803dc0/Medium-766034W3XR21000_I.jpg?v=1",
+                    "https://balenciaga.dam.kering.com/m/2debb2271e44388c/Medium-766034W3XR21000_J.jpg?v=2",
+                    "https://balenciaga.dam.kering.com/m/46de148d27c536ad/Medium-766034W3XR21000_A.jpg?v=2",
                     "./img/3xl-ski-accessory.jpg",
                 ],
-                name: "Balenciaga 3XL Ski sneaker in white",
+                name: "Balenciaga 3xl ski sneaker in black",
                 prices: {
                     excellent: "5400 ₴",
                     good: "",
@@ -104,7 +104,7 @@
                     "https://balenciaga.dam.kering.com/m/70c8068880a0672b/Thumbnail-766034W3XR27010_A.jpg?v=1",
                     "./img/3xl-ski-accessory.jpg",
                 ],
-                name: "Balenciaga 3XL Ski sneaker in yellow",
+                name: "Balenciaga 3xl ski sneaker in yellow",
                 prices: {
                     excellent: "5400 ₴",
                     good: "",
@@ -113,7 +113,9 @@
             },
         ];
 
-        initializePage(colorsData, commonInfo);
+        updateContent("white", commonInfo, colorsData);
+        setColorButtons(colorsData, commonInfo);
+
 
     </script>
 </body>
