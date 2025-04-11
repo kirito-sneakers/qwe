@@ -660,12 +660,16 @@ header {
             width: inherit;
         }
     }
-    .saved-icon {
+    .header-icons {
         position: absolute;
-        width: 40px;
+        display: flex;
+        gap: 20px;
         right: 40px;
-        svg path {
-            height: inherit;
+        top: 50%;
+        transform: translateY(-50%);
+        a {
+            height: 40px;
+            width: 40px;
         }
     }
 }
@@ -979,11 +983,12 @@ footer {
                 text-align: left;
             }
             &::marker {
-                content: "✧ ";
+                content: "";
                 font-size: 30px;
+                marker: none;
             }
             ol {
-                padding-left: 30px;
+                padding-left: 0px;
                 gap: 20px;
                 li {
                     text-align: left;
@@ -1086,6 +1091,7 @@ footer {
                 gap: 5px;
                 li::marker {
                     content: '';
+                    marker: none;
                 }
             }
         }
@@ -1297,7 +1303,13 @@ footer {
                     font-size: 25px; 
                 }
                 p {
-                    font-size: 17px;
+                    font-size: 15px;
+                }
+                ol {
+                    padding-left: 0;
+                    li p {
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -1308,11 +1320,33 @@ footer {
 }
 
 @media (max-width: 450px) {
+    main.alternative-header {
+        padding-top: 60px;
+    }
     header {
-        .saved-icon {
+        padding: 15px;
+        .logo-icon {
+            width: 40px;
+        }
+        .header-icons {
+            gap: 15px;
             right: 20px;
+            a {
+                height: 30px;
+                width: 30px;
+            }
         }
     }
+    .mein-menu {
+        .list-item {
+            aspect-ratio: 1 / 1.9;
+            h3 {
+                font-size: 13px;
+                
+            }
+        }
+    }
+
     .section-header {
         height: 150px;
     }
@@ -1383,19 +1417,32 @@ footer {
             }
         }
     }
-}
-
-@media (max-width: 375px) {
-    .mein-menu {
-        .list-item {
-            aspect-ratio: 1 / 1.9;
-            h3 {
-                font-size: 13px;
-                
+    .about-us {
+        padding-top: 50px;
+        h1 {
+            margin-bottom: 40px;
+        }
+        ol {
+            li {
+                h2 {
+                    font-size: 25px; 
+                }
+                p {
+                    font-size: 15px;
+                }
+                ol {
+                    padding-left: 0;
+                    li p {
+                        font-size: 15px;
+                    }
+                }
             }
         }
     }
 
+}
+
+@media (max-width: 375px) {
     .brand-logo {
         img {
             height: 170px;
