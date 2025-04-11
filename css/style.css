@@ -1244,6 +1244,11 @@ footer {
 }
 
 @media (max-width: 730px) {
+    .brand-logo {
+        img {
+            height: 170px;
+        }
+    }
     .mein-menu {
         .list-item {
             aspect-ratio: 1 / 1.55;
@@ -1277,6 +1282,11 @@ footer {
 }
 
 @media (max-width: 535px) {
+    .brand-logo {
+        img {
+            height: 150px;
+        }
+    }
     .mein-menu {
         .list-item {
             aspect-ratio: 1 / 1.7;
@@ -1445,7 +1455,7 @@ footer {
 @media (max-width: 375px) {
     .brand-logo {
         img {
-            height: 170px;
+            height: 140px;
         }
     }
 }
