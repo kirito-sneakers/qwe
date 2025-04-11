@@ -29,7 +29,6 @@ function updateContent(colorName, commonInfo, colorsData) {
             <li>Middle Quality - ${selectedColor.prices.middle}</li>
         `;
         itemInfo.querySelector(".descr p:nth-child(3)").textContent = `Sizes: ${commonInfo.sizes}`;
-        itemInfo.querySelector(".descr p:nth-child(4)").textContent = commonInfo.shipping;
     }
 }
 

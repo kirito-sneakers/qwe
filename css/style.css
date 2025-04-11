@@ -612,7 +612,7 @@ main {
 .go-back-btn {
     width: 70px;
     position: absolute;
-    top: 90px;
+    top: 95px;
     left: 20px;
     background: none;
     border: none;
@@ -652,7 +652,7 @@ header {
     padding: 20px;
     align-items: center;
     justify-content: center;
-    z-index: 99;
+    z-index: 9999;
     transition: transform 0.3s ease;
     .logo-icon {
         width: 50px;
@@ -1096,6 +1096,9 @@ footer {
             }
         }
     }
+    .about-qlt {
+        font-size: 19px;
+    }
 }
 
 .no-favorite {
@@ -1326,6 +1329,7 @@ footer {
     }
     .go-back-btn {
         width: 55px;
+        top: 100px;
     }
 }
 
@@ -1405,6 +1409,9 @@ footer {
                 font-size: 17px;
                 gap: 30px;
             }
+            .about-qlt {
+                font-size: 17px;
+            }
         }
     }
     .mein-menu {
@@ -1428,7 +1435,6 @@ footer {
         }
     }
     .about-us {
-        padding-top: 50px;
         h1 {
             margin-bottom: 40px;
         }
@@ -1449,7 +1455,9 @@ footer {
             }
         }
     }
-
+    .go-back-btn {
+        top: 80px;
+    }
 }
 
 @media (max-width: 375px) {
