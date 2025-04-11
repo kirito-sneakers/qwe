@@ -8,7 +8,7 @@ const balenciagaMainMenu = [
             "https://balenciaga.dam.kering.com/m/102c767026467f20/Large-814419W3XUA1090_F.jpg?v=1",
             "https://balenciaga.dam.kering.com/m/10e6ed040d681a1d/Large-734731W2RG39010_F.jpg?v=2"
         ],
-        href: "./balenciaga/balenciaga.html#three_xl_title",
+        href: "./balenciaga/index.html#three_xl_title",
         models: 5,
     },
     {
@@ -20,7 +20,7 @@ const balenciagaMainMenu = [
             "https://balenciaga.dam.kering.com/m/61e97b5971411bf7/Large-690494W3GN11000_F.jpg?v=3",
             "./balenciaga/img/track2-black_white-1.jpg",
         ],
-        href: "./balenciaga/balenciaga.html#track_title",
+        href: "./balenciaga/index.html#track_title",
         models: 5,
     },
     {
@@ -33,7 +33,7 @@ const balenciagaMainMenu = [
             "https://balenciaga.dam.kering.com/m/4b34eb8a4d5105cd/Large-772774WRUNG9010_F.jpg?v=1",
             "https://balenciaga.dam.kering.com/m/200868570badeafa/Large-779066W3RXP2000_F.jpg?v=4",
         ],
-        href: "./balenciaga/balenciaga.html#runner_title",
+        href: "./balenciaga/index.html#runner_title",
         models: 6,
     },
     {
@@ -44,7 +44,7 @@ const balenciagaMainMenu = [
             "./balenciaga/img/triple-s-adidas-black-1.jpg",
             "./balenciaga/img/triple-s-faded-black-1.jpg",
         ],
-        href: "./balenciaga/balenciaga.html#triple_s_title",
+        href: "./balenciaga/index.html#triple_s_title",
         models: 4,
     },
     // {
