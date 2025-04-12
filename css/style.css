@@ -973,6 +973,9 @@ footer {
         list-style: none;
         padding-left: 0;
         li {
+            a {
+                color: #7f3f7a;
+            }
             h2 {
                 font-size: 30px;
                 text-align: left;
